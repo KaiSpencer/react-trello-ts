@@ -2,11 +2,12 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 
 import Board from "../src";
+import { LaneFooterComponent } from "rt/components/Lane/LaneFooter";
 
-const data = require("./data/collapsible.json");
+import data from "./data/collapsible.json";
 
-const LaneFooter = ({ onClick, collapsed }) => (
-	<div onClick={onClick} onKeyDown={onClick}>
+const LaneFooter: LaneFooterComponent = ({ onClick, onKeyDown, collapsed }) => (
+	<div onClick={onClick} onKeyDown={onKeyDown}>
 		{collapsed ? "click to expand" : "click to collapse"}
 	</div>
 );
