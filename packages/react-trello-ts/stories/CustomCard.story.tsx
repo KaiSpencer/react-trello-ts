@@ -1,12 +1,21 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import { storiesOf } from "@storybook/react";
 import { MovableCardWrapper } from "rt/styles/Base";
 import { DeleteButton } from "./../src/widgets/DeleteButton";
 import Board from "../src";
 import { Tag } from "rt/components/Card/Tag";
 import { BoardData } from "rt/types/Board";
+import { CardComponent } from "rt/components/Card";
 
-const CustomCard = ({
+const CustomCard: CardComponent<{
+	name: string;
+	cardStyle: CSSProperties;
+	body: string;
+	dueOn: string;
+	cardColor: CSSProperties["color"];
+	subTitle: string;
+	escalationText: string;
+}> = ({
 	onClick,
 	className,
 	name,

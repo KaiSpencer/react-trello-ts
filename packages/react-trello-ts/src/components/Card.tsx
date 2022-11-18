@@ -20,6 +20,29 @@ import { createTranslate } from "..";
 import { Card as ICard } from "../types/Board";
 import { StyledComponent } from "styled-components";
 
+/**
+ * Card component type
+ *
+ * Pass in a type to the optional generic to add custom properties to the card
+ *
+ * @example
+ *
+ * type CustomCardProps = {
+ * 	dueOn: string;
+ * }
+ *
+ * const CustomCard: CardComponent<CustomCardProps> = ({ dueOn, ...props }) => {
+ * 	return (
+ * 		<Card {...props}>
+ * 			<Detail>{dueOn}</Detail>
+ * 		</Card>
+ * 	)
+ * }
+ */
+export type CardComponent<TCustomCardProps extends {} = {}> = FC<
+	PropsWithChildren<CardProps & TCustomCardProps>
+>;
+
 export type CardProps = {
 	showDeleteButton?: boolean;
 	onDelete?: () => void;
@@ -37,9 +60,9 @@ export type CardProps = {
 	cardDraggable?: boolean;
 	editable?: boolean;
 	t: typeof createTranslate;
-} & { [key: string]: any };
+};
 
-export const Card: FC<PropsWithChildren<CardProps>> = ({
+export const Card: CardComponent = ({
 	onDelete,
 	onChange,
 	id,
