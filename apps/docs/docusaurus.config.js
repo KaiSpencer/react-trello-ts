@@ -24,7 +24,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "rs"],
+    locales: ["en"],
   },
 
   presets: [
@@ -79,7 +79,7 @@ const config = {
             items: [
               {
                 label: "Getting Started",
-                to: "/docs/",
+                to: "/docs/getting-started",
               },
             ],
           },
