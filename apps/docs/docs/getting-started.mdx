@@ -1,0 +1,91 @@
+---
+sidebar_position: 1
+---
+
+# Quickstart
+
+Let's discover **react-trello-ts in less than 5 minutes**.
+
+## Getting Started
+
+Get started by **installing react-trello-ts**.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="npm" label="npm" default>
+
+```
+npm install KaiSpencer/react-trello-ts
+```
+
+  </TabItem>
+  <TabItem value="yarn" label="yarn">
+
+```
+yarn add KaiSpencer/react-trello-ts
+```
+
+  </TabItem>
+  <TabItem value="pnpm" label="pnpm">
+
+```
+pnpm install KaiSpencer/react-trello-ts
+```
+
+  </TabItem>
+</Tabs>
+
+## Usage
+
+The `Board` component takes a prop called `data` that contains all the details related to rendering the board. A sample data json is given here to illustrate the contract:
+
+```javascript
+const data = {
+  lanes: [
+    {
+      id: "lane1",
+      title: "Planned Tasks",
+      label: "2/2",
+      cards: [
+        {
+          id: "Card1",
+          title: "Write Blog",
+          description: "Can AI make memes",
+          label: "30 mins",
+          draggable: false,
+        },
+        {
+          id: "Card2",
+          title: "Pay Rent",
+          description: "Transfer via NEFT",
+          label: "5 mins",
+          metadata: { sha: "be312a1" },
+        },
+      ],
+    },
+    {
+      id: "lane2",
+      title: "Completed",
+      label: "0/0",
+      cards: [],
+    },
+  ],
+};
+```
+
+`draggable` property of Card object is `true` by default.
+
+The data is passed to the board component and that's it.
+
+```jsx
+import React from "react";
+import Board from "react-trello-ts";
+
+export default function App() {
+  return <Board data={data} />;
+}
+```
+
+Refer to storybook for detailed examples: https://kaispencer.github.io/react-trello-ts/
