@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
 import styles from "./index.module.css";
 
@@ -22,6 +21,14 @@ function HomepageHeader() {
             Get Started - 5min ⏱️
           </Link>
         </div>
+        <div className={styles.buttons} style={{ marginTop: 10 }}>
+          <Link
+            className="button button--secondary button--lg"
+            to="https://kaispencer.github.io/react-trello-ts/"
+          >
+            Storybook Examples
+          </Link>
+        </div>
       </div>
     </header>
   );
@@ -35,9 +42,7 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <main>{/* <HomepageFeatures /> */}</main>
     </Layout>
   );
 }

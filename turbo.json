@@ -20,6 +20,7 @@
     "deploy": {
       "dependsOn": ["build", "test", "lint"],
       "outputs": []
-    }
+    },
+    "dev": {}
   }
 }
