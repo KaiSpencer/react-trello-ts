@@ -46,6 +46,10 @@ export const store = create<State>()((set) => ({
 				if (!lane) {
 					throw new Error("Lane not found");
 				}
+				if (index === undefined && lane.cards) {
+					lane.cards.push(card);
+					return;
+				}
 				lane.cards[index || 0] = card;
 			}),
 		),
