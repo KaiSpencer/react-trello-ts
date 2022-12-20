@@ -1,4 +1,5 @@
 {
+  "name": "react-trello-ts-root",
   "scripts": {
     "build": "turbo run build",
     "test:unit": "turbo run test:unit",
