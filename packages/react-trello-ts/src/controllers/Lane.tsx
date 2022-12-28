@@ -144,19 +144,15 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		setAddCardMode(false);
 		const card = { id: _id, ...params };
 		board.addCard(card, laneId);
-		onCardAdd(card, laneId);
+		onCardAdd?.(card, laneId);
 	};
 	const updateCard = (updatedCard: Card) => {
 		board.updateCard(id, updatedCard);
-		onCardUpdate(id, updatedCard);
+		onCardUpdate?.(id, updatedCard);
 	};
 	const updateTitle = (value) => {
 		board.updateLane({ id, title: value });
-		onLaneUpdate(id, { id, title: value });
-		onLaneUpdate(id, {
-			title: value,
-			id: id,
-		});
+		onLaneUpdate?.(id, { id, title: value });
 	};
 	const laneDidMount = (node: HTMLDivElement) => {
 		if (node) {
@@ -165,7 +161,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 	};
 	const removeLane = () => {
 		board.removeLane(id);
-		onLaneDelete(id);
+		onLaneDelete?.(id);
 	};
 	const handleScroll = (evt) => {
 		const node = evt.target;
@@ -194,12 +190,12 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 	const removeCard = (cardId: Card["id"]) => {
 		if (onBeforeCardDelete && typeof onBeforeCardDelete === "function") {
 			onBeforeCardDelete(() => {
-				onCardDelete?.(cardId, id);
 				board.removeCard(id, cardId);
+				onCardDelete?.(cardId, id);
 			});
 		} else {
-			onCardDelete?.(cardId, id);
 			board.removeCard(id, cardId);
+			onCardDelete?.(cardId, id);
 		}
 	};
 	const onDragStart = ({ payload }) => {
@@ -224,7 +220,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 				: true;
 			if (response === undefined || !!response) {
 				board.moveCard(payload.laneId, laneId, payload.id, addedIndex);
-				onCardMoveAcrossLanes(payload.laneId, laneId, payload.id, addedIndex);
+				onCardMoveAcrossLanes?.(payload.laneId, laneId, payload.id, addedIndex);
 			}
 			return response;
 		}
