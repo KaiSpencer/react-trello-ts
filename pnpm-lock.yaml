@@ -103,7 +103,6 @@ importers:
       i18next: ^17.0.3
       identity-obj-proxy: ^3.0.0
       immer: ^9.0.15
-      immutability-helper: ^2.8.1
       jest: ^27
       jest-cli: ^27
       jest-styled-components: ^7
@@ -129,7 +128,6 @@ importers:
       autosize: 4.0.4
       classnames: 2.3.2
       immer: 9.0.15
-      immutability-helper: 2.9.1
       react-popopo: 2.1.9_7wdodx5nsa5yg5y3zejnac65wm
       trello-smooth-dnd: 1.0.0
       uuid: 9.0.0
@@ -11610,12 +11608,6 @@ packages:
 
   /immer/9.0.15:
     resolution: {integrity: sha512-2eB/sswms9AEUSkOm4SbV5Y7Vmt/bKRwByd52jfLkW4OLYeaTP3EEiJ9agqU0O/tq6Dk62Zfj+TJSqfm1rLVGQ==}
-    dev: false
-
-  /immutability-helper/2.9.1:
-    resolution: {integrity: sha512-r/RmRG8xO06s/k+PIaif2r5rGc3j4Yhc01jSBfwPCXDLYZwp/yxralI37Df1mwmuzcCsen/E/ITKcTEvc1PQmQ==}
-    dependencies:
-      invariant: 2.2.4
     dev: false
 
   /import-fresh/3.3.0:
