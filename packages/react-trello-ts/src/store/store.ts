@@ -1,7 +1,6 @@
 import produce from "immer";
 import { BoardData, Card, Lane } from "../types/Board";
 import create from "zustand";
-import cloneDeep from "lodash/cloneDeep";
 
 export interface State {
 	data: BoardData;
@@ -80,7 +79,7 @@ export const store = create<State>()((set) => ({
 				const cardIndex = fromLane.cards.findIndex((c) => c.id === cardId);
 				if (cardIndex !== -1) {
 					const card = fromLane.cards[cardIndex];
-					const newCard = { ...cloneDeep(card), laneId: toLaneId };
+					const newCard = { ...card, laneId: toLaneId };
 					fromLane.cards.splice(cardIndex, 1);
 					if (index !== undefined) {
 						toLane.cards.splice(index, 0, newCard);
