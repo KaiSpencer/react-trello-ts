@@ -38,7 +38,6 @@
     "autosize": "^4.0.2",
     "classnames": "^2.2.6",
     "immer": "^9.0.15",
-    "immutability-helper": "^2.8.1",
     "react-popopo": "^2.1.9",
     "trello-smooth-dnd": "1.0.0",
     "uuid": "^9",

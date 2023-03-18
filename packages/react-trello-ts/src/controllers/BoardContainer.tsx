@@ -132,7 +132,7 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 	}, []);
 
 	useEffect(() => {
-		if (JSON.stringify(board.data) === JSON.stringify(data)) {
+		if (JSON.stringify(board.data) !== JSON.stringify(data)) {
 			onDataChange(data);
 			board.initializeLanes(data.lanes);
 		}

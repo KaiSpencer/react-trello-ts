@@ -1,6 +1,5 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import update from "immutability-helper";
 
 import { MovableCardWrapper } from "rt/styles/Base";
 import debug from "./helpers/debug";
