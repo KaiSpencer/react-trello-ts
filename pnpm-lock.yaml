@@ -107,7 +107,6 @@ importers:
       jest: ^27
       jest-cli: ^27
       jest-styled-components: ^7
-      lodash: ^4.17.11
       preact: '>=10.5.13 <11.0.0'
       prettier: 1.14.3
       react: ^16
@@ -131,7 +130,6 @@ importers:
       classnames: 2.3.2
       immer: 9.0.15
       immutability-helper: 2.9.1
-      lodash: 4.17.21
       react-popopo: 2.1.9_7wdodx5nsa5yg5y3zejnac65wm
       trello-smooth-dnd: 1.0.0
       uuid: 9.0.0
