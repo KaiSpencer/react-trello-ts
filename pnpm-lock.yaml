@@ -16,18 +16,20 @@ importers:
     specifiers:
       '@4tw/cypress-drag-drop': ^2.2.1
       '@testing-library/cypress': ^8.0.3
+      '@types/node': ^18.7.14
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@vitejs/plugin-react': ^2.1.0
       cypress: ^10.10.0
       react: ^18.2.0
       react-dom: ^18.2.0
-      react-trello-ts: '*'
+      react-trello-ts: workspace:*
       typescript: ^4.8.2
       vite: ^3.1.0
     dependencies:
       '@4tw/cypress-drag-drop': 2.2.1_cypress@10.10.0
       '@testing-library/cypress': 8.0.3_cypress@10.10.0
+      '@types/node': 18.11.3
       cypress: 10.10.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -6191,13 +6193,13 @@ packages:
   /@types/react-syntax-highlighter/11.0.4:
     resolution: {integrity: sha512-9GfTo3a0PHwQeTVoqs0g5bS28KkSY48pp5659wA+Dp4MqceDEa8EHBqrllJvvtyusszyJhViUEap0FDvlk/9Zg==}
     dependencies:
-      '@types/react': 16.14.32
+      '@types/react': 18.0.21
     dev: true
 
   /@types/react-textarea-autosize/4.3.6:
     resolution: {integrity: sha512-cTf8tCem0c8A7CERYbTuF+bRFaqYu7N7HLCa6ZhUhDx8XnUsTpGx5udMWljt87JpciUKuUkImKPEsy6kcKhrcQ==}
     dependencies:
-      '@types/react': 16.14.32
+      '@types/react': 18.0.21
     dev: true
 
   /@types/react/16.14.32:

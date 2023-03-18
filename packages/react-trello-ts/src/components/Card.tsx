@@ -1,24 +1,11 @@
-import React, {
-	CSSProperties,
-	EventHandler,
-	FC,
-	MouseEvent,
-	PropsWithChildren,
-} from "react";
-import {
-	MovableCardWrapper,
-	CardHeader,
-	CardRightContent,
-	CardTitle,
-	Detail,
-	Footer,
-} from "../styles/Base";
-import { InlineInput } from "../widgets/InlineInput";
-import { Tag, TagProps } from "./Card/Tag";
-import { DeleteButton } from "../widgets/DeleteButton";
-import { createTranslate } from "..";
-import { Card as ICard } from "../types/Board";
-import { StyledComponent } from "styled-components";
+import React, {CSSProperties, FC, PropsWithChildren,} from "react";
+import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper,} from "@/styles/Base";
+import {InlineInput} from "@/widgets";
+import {Tag, TagProps} from "./Card/Tag";
+import {DeleteButton} from "@/widgets";
+import {createTranslate} from "..";
+import {Card as ICard} from "../types/Board";
+import {StyledComponent} from "styled-components";
 
 /**
  * Card component type
