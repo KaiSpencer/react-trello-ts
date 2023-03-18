@@ -1,5 +1,5 @@
 import React, { CSSProperties, FC, PropsWithChildren } from "react";
-import { TagSpan } from "../../styles/Base";
+import { TagSpan } from "@/styles/Base";
 
 export interface TagProps {
 	title: string;

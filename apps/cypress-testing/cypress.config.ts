@@ -1,5 +1,4 @@
 import { defineConfig } from "cypress";
-
 export default defineConfig({
   video: false,
   component: {
@@ -10,6 +9,11 @@ export default defineConfig({
       bundler: "vite",
       viteConfig: {
         server: { fs: { strict: false } },
+				resolve:{
+    alias:{
+      '@' : "../../node_modules/react-trello-ts/src"
+    },
+  },
       },
     },
   },
