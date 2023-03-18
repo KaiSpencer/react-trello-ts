@@ -7,3 +7,4 @@ dist/
 .history/
 storybook-build
 .npmrc
+coverage
