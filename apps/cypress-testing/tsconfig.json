@@ -16,6 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx","types": ["cypress","@testing-library/cypress","@4tw/cypress-drag-drop"]
   },
-  "include": ["src","cypress",],
+  "include": [
+	"src","cypress"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

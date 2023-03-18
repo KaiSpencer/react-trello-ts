@@ -29,12 +29,12 @@ importers:
     dependencies:
       '@4tw/cypress-drag-drop': 2.2.1_cypress@10.10.0
       '@testing-library/cypress': 8.0.3_cypress@10.10.0
-      '@types/node': 18.11.3
       cypress: 10.10.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-trello-ts: link:../../packages/react-trello-ts
     devDependencies:
+      '@types/node': 18.11.3
       '@types/react': 18.0.21
       '@types/react-dom': 18.0.6
       '@vitejs/plugin-react': 2.1.0_vite@3.1.8

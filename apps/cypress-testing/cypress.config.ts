@@ -1,5 +1,4 @@
 import { defineConfig } from "cypress";
-import * as path from "path";
 export default defineConfig({
   video: false,
   component: {
