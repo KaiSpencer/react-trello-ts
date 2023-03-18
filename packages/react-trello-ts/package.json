@@ -37,8 +37,6 @@
   "dependencies": {
     "autosize": "^4.0.2",
     "immer": "^9.0.15",
-    "immutability-helper": "^2.8.1",
-    "lodash": "^4.17.11",
     "react-popopo": "^2.1.9",
     "trello-smooth-dnd": "1.0.0",
     "uuid": "^9",

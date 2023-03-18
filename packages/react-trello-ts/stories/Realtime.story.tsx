@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { storiesOf } from "@storybook/react";
-import update from "immutability-helper";
 import debug from "./helpers/debug";
 
 import Board from "../src";
@@ -46,19 +45,32 @@ class RealtimeBoard extends Component {
 	};
 
 	modifyLaneTitle = () => {
-		const data = this.state.boardData;
-		const newData = update(data, {
-			lanes: { 1: { title: { $set: "New Lane Title" } } },
-		});
-		this.setState({ boardData: newData });
+		const data = {...this.state.boardData,
+			lanes: this.state.boardData.lanes.map((lane, index) => {
+				if (index === 1) {
+					return {...lane, title: "New Lane Title"}
+				}
+				return lane
+			})
+		}
+
+		this.setState({ boardData: data });
 	};
 
 	modifyCardTitle = () => {
-		const data = this.state.boardData;
-		const newData = update(data, {
-			lanes: { 1: { cards: { 0: { title: { $set: "New Card Title" } } } } },
-		});
-		this.setState({ boardData: newData });
+		const data = {...this.state.boardData,
+			lanes: this.state.boardData.lanes.map((lane, index) => {
+				if (index === 1) {
+					return {...lane, cards: lane.cards.map((card, index) => {
+						if (index === 0) {
+							return {...card, title: "New Card Title"}
+						}
+						return card
+					})}
+				}
+				return lane
+			})}
+		this.setState({ boardData: data });
 	};
 
 	updateCard = () => {

@@ -1,5 +1,4 @@
 import React, { CSSProperties, FC, PropsWithChildren, useEffect } from "react";
-import cloneDeep from "lodash/cloneDeep";
 import { v1 } from "uuid";
 
 import Container from "../dnd/Container";
@@ -211,7 +210,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		}
 
 		if (addedIndex != null) {
-			const newCard = { ...cloneDeep(payload), laneId };
+			const newCard = { ...payload, laneId };
 			handleDragEnd?.(payload.id, laneId, id, addedIndex, newCard);
 
 			const response = handleDragEnd
@@ -299,7 +298,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		);
 	};
 
-	const allClassNames = className? `react-trello-lane ${className}` : "react-trello-lane";
+	const allClassNames = className ? `react-trello-lane ${className}` : "react-trello-lane";
 	const showFooter = collapsibleLanes && cards.length > 0;
 	return (
 		<components.Section

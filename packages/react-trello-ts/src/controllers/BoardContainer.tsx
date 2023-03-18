@@ -16,7 +16,6 @@ import { FormState as NewCardFormState } from "../components/NewCardForm";
 import * as DefaultComponents from "./../components";
 import { EventBusHandle } from "../types/EventBus";
 import { useBoard } from "../store/useBoard";
-import { isEqual } from "lodash";
 export interface BoardContainerProps {
 	id?: string;
 	components?: Partial<typeof DefaultComponents>;
@@ -133,7 +132,7 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 	}, []);
 
 	useEffect(() => {
-		if (!isEqual(board.data, data)) {
+		if (JSON.stringify(board.data) !== JSON.stringify(data)) {
 			onDataChange(data);
 			board.initializeLanes(data.lanes);
 		}
