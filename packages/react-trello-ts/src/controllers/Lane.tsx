@@ -1,5 +1,4 @@
 import React, { CSSProperties, FC, PropsWithChildren, useEffect } from "react";
-import classNames from "classnames";
 import cloneDeep from "lodash/cloneDeep";
 import { v1 } from "uuid";
 
@@ -300,7 +299,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		);
 	};
 
-	const allClassNames = classNames("react-trello-lane", className || "");
+	const allClassNames = className? `react-trello-lane ${className}` : "react-trello-lane";
 	const showFooter = collapsibleLanes && cards.length > 0;
 	return (
 		<components.Section
