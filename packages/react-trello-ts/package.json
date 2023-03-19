@@ -4,19 +4,22 @@
   "description": "Pluggable typesafe components to add a trello like kanban board to your application",
   "main": "src/index.tsx",
   "publishConfig": {
-	"main": "dist/index.js",
-	"typings": "dist/index.d.ts"
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts"
   },
   "files": [
     "dist",
     "README"
   ],
+  "type": "module",
   "scripts": {
     "prepublish": "pnpm build",
     "storybook": "start-storybook -p 9002",
     "test:unit": "jest",
     "test:watch": "jest --watch",
-    "build": "tsup src/index.tsx --format cjs --dts --external react --inject react-shim.js",
+    "build": "pnpm build:types && pnpm build:js",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist --allowJs false --outDir dist",
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --ignore \"**/*.test.tsx\"",
     "docs": "build-storybook -o docs",
     "deploy-storybook": "pnpm build-storybook && gh-pages -d storybook-build",
     "build-storybook": "build-storybook -o storybook-build",
@@ -48,6 +51,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
+	"@babel/cli": "^7.21.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-transform-async-to-generator": "7.4.4",
     "@babel/plugin-transform-runtime": "7.1.0",
@@ -89,7 +93,7 @@
     "regenerator-runtime": "*",
     "require-from-string": "^2.0.2",
     "semantic-release": "^17.2.3",
-    "styled-components": "^5",
+    "styled-components": "^5.3.9",
     "ts-jest": "^27",
     "tsup": "^6.2.3",
     "typescript": "^4.9.3",

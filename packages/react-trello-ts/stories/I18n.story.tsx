@@ -1,11 +1,10 @@
-import React, { Component, Suspense } from "react";
 import { storiesOf } from "@storybook/react";
 import { useTranslation, I18nextProvider } from "react-i18next";
 
 import Board from "../src";
+import createTranslate from "../src/helpers/createTranslate";
 
 import i18n from "./helpers/i18n";
-import createTranslate from "rt/helpers/createTranslate";
 const smallData = require("./data/data-sort");
 
 const I18nBoard = () => {
@@ -92,6 +91,7 @@ storiesOf("I18n", module)
 
 storiesOf("I18n", module)
 	.addDecorator((story) => (
+		// @ts-ignore
 		<I18nextProvider i18n={i18n}>{story()}</I18nextProvider>
 	))
 	.add("Using i18next", () => <I18nBoard />, {

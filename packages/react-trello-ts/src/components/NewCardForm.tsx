@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren, useState } from "react";
+import React, {Component, FC, PropsWithChildren, useState} from "react";
 import {
 	CardForm,
 	CardHeader,
@@ -18,13 +18,13 @@ export interface FormState {
 	laneId: string;
 }
 
-interface NewCardFormProps {
+export interface NewCardFormProps {
 	laneId: string;
 	onCancel: () => void;
 	onAdd: (formState: FormState) => void;
 	t: typeof createTranslate;
 }
-export const NewCardForm: FC<PropsWithChildren<NewCardFormProps>> = ({
+export const NewCardForm: FC<NewCardFormProps> = ({
 	laneId,
 	onCancel,
 	onAdd,

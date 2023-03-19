@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "ES5",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "ES2022",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "jsx": "react",                                /* Specify what JSX code is generated. */
-    "module": "commonjs",    
+    "module": "commonjs",
     "declaration": true,                            /* Specify what module code is generated. */
-    "rootDir": "./",                                  /* Specify the root folder within your source files. */
+    "rootDir": "./src",                                  /* Specify the root folder within your source files. */
     "baseUrl": ".",                                  /* Specify the base directory to resolve non-relative module names. */
     "paths": {"rt/*":["./src/*"], "@/*": ["./src/*"]},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
     "resolveJsonModule": true,                        /* Enable importing .json files. */
@@ -13,8 +13,9 @@
     "allowJs": true,
     "strict": false,                                      /* Enable all strict type-checking options. */
     "strictFunctionTypes": false,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
-    "skipLibCheck": true   ,  
-    },
-    "include": ["./**/*.ts", "./**/*.tsx", "./**/*.js", "./**/*.jsx"],
-    "exclude": ["node_modules", "dist"]
+    "skipLibCheck": true,
+	"emitDeclarationOnly": true
+  },
+    "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.js", "./src/**/*.jsx"],
+    "exclude": ["node_modules", "dist", "stories"]
 }

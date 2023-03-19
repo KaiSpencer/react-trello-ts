@@ -18,6 +18,8 @@ export const Board: FC<
 
 	return (
 		<BoardContext.Provider value={store}>
+			{/*
+			// @ts-ignore */}
 			<components.GlobalStyle />
 			<BoardContainer
 				id={id || v1()}
