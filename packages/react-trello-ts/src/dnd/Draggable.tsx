@@ -21,7 +21,6 @@ export const Draggable: FC<PropsWithChildren<DraggableProps>> = ({
 	}
 
 	const clsName = `${className ? `${className} ` : ""}`;
-
 	return (
 		<div {...rest} className={`${clsName}${wrapperClass}`}>
 			{children}
