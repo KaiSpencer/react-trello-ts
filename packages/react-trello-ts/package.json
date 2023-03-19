@@ -11,7 +11,6 @@
     "dist",
     "README"
   ],
-  "type": "module",
   "scripts": {
     "prepublish": "pnpm build",
     "storybook": "start-storybook -p 9002",
