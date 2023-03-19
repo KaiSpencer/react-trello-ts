@@ -46,6 +46,7 @@ export type CardProps = {
 	tags?: TagProps[];
 	cardDraggable?: boolean;
 	editable?: boolean;
+	metadata?: Record<string, any>;
 	t: typeof createTranslate;
 };
 
