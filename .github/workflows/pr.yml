@@ -1,40 +1,50 @@
 name: PR
- 
-on: 
+
+on:
   pull_request:
     types: [opened, synchronize]
- 
+
 jobs:
   lint:
       name: Lint & Test
       timeout-minutes: 15
       runs-on: ubuntu-latest
-      # To use Remote Caching, uncomment the next lines and follow the steps below.
-      # env:
-      #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-      #  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
- 
+
       steps:
-        - name: Check out code
+        - name: Checkout
           uses: actions/checkout@v3
-          with:
-            fetch-depth: 2
- 
-        - uses: pnpm/action-setup@v2.0.1
-          with:
-            version: 6.32.2
- 
-        - name: Setup Node.js environment
+
+        - name: Install Node.js
           uses: actions/setup-node@v3
           with:
             node-version: 16
-            cache: 'pnpm'
- 
+
+        - uses: pnpm/action-setup@v2
+          name: Install pnpm
+          id: pnpm-install
+          with:
+            version: 7
+            run_install: false
+
+        - name: Get pnpm store directory
+          id: pnpm-cache
+          shell: bash
+          run: |
+            echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+        - uses: actions/cache@v3
+          name: Setup pnpm cache
+          with:
+            path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+            key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+            restore-keys: |
+              ${{ runner.os }}-pnpm-store-
+
         - name: Install dependencies
           run: pnpm install
-  
+
         - name: Lint
           run: pnpm lint
-        
+
         - name: Unit Test
           run: pnpm test:unit

@@ -22,7 +22,8 @@
     "docs": "build-storybook -o docs",
     "deploy-storybook": "pnpm build-storybook && gh-pages -d storybook-build",
     "build-storybook": "build-storybook -o storybook-build",
-    "lint": "pnpm rome check ."
+    "lint": "pnpm rome check .",
+	"release": "pnpm build && changesets publish"
   },
   "repository": {
     "type": "git",
