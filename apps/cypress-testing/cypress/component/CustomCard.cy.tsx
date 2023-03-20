@@ -1,4 +1,4 @@
-import { mount } from "cypress/react18";
+import { mount } from "cypress/react";
 import { DeleteButton } from "react-trello-ts";
 import { CardProps } from "react-trello-ts/src/components/Card";
 import { Tag } from "react-trello-ts/src/components/Card/Tag";
