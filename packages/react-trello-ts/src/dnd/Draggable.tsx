@@ -20,7 +20,7 @@ export const Draggable: FC<PropsWithChildren<DraggableProps>> = ({
 		return React.cloneElement(render(), { className: wrapperClass });
 	}
 
-	const clsName = `${className ? `${className} ` : ""}`;
+	const clsName = `${className ? className + ' ' : ''}`
 	return (
 		<div {...rest} className={`${clsName}${wrapperClass}`}>
 			{children}
