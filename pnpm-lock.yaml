@@ -17,12 +17,12 @@ importers:
       '@4tw/cypress-drag-drop': ^2.2.1
       '@testing-library/cypress': ^8.0.3
       '@types/node': ^18.11.3
-      '@types/react': ^18.0.17
-      '@types/react-dom': ^18.0.6
+      '@types/react': ^17
+      '@types/react-dom': ^17
       '@vitejs/plugin-react': ^2.1.0
       cypress: ^10.10.0
-      react: ^18.2.0
-      react-dom: ^18.2.0
+      react: ^17
+      react-dom: ^17
       react-trello-ts: workspace:*
       typescript: ^4.8.2
       vite: ^3.1.0
@@ -30,13 +30,13 @@ importers:
       '@4tw/cypress-drag-drop': 2.2.1_cypress@10.10.0
       '@testing-library/cypress': 8.0.3_cypress@10.10.0
       cypress: 10.10.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
       react-trello-ts: link:../../packages/react-trello-ts
     devDependencies:
       '@types/node': 18.11.3
-      '@types/react': 18.0.21
-      '@types/react-dom': 18.0.6
+      '@types/react': 17.0.53
+      '@types/react-dom': 17.0.19
       '@vitejs/plugin-react': 2.1.0_vite@3.1.8
       typescript: 4.8.4
       vite: 3.1.8
@@ -6094,7 +6094,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@testing-library/dom': 8.19.0
-      '@types/react-dom': 16.9.16
+      '@types/react-dom': 17.0.19
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: true
@@ -6397,10 +6397,10 @@ packages:
       '@types/react': 16.14.32
     dev: true
 
-  /@types/react-dom/18.0.6:
-    resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
+  /@types/react-dom/17.0.19:
+    resolution: {integrity: sha512-PiYG40pnQRdPHnlf7tZnp0aQ6q9tspYr72vD61saO6zFCybLfMqwUCN0va1/P+86DXn18ZWeW30Bk7xlC5eEAQ==}
     dependencies:
-      '@types/react': 18.0.21
+      '@types/react': 17.0.53
     dev: true
 
   /@types/react-router-config/5.0.6:
@@ -6437,6 +6437,14 @@ packages:
 
   /@types/react/16.14.32:
     resolution: {integrity: sha512-hvEy4vGVADbtj/U6+CA5SRC5QFIjdxD7JslAie8EuAYZwhYY9bgforpXNyF1VFzhnkEOesDy1278t1wdjN74cw==}
+    dependencies:
+      '@types/prop-types': 15.7.5
+      '@types/scheduler': 0.16.2
+      csstype: 3.1.1
+    dev: true
+
+  /@types/react/17.0.53:
+    resolution: {integrity: sha512-1yIpQR2zdYu1Z/dc1OxC+MA6GR240u3gcnP4l6mvj/PJiVaqHsQPmWttsvHsfnhfPbU2FuGmo0wSITPygjBmsw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -6506,7 +6514,7 @@ packages:
     resolution: {integrity: sha512-KuKJ9Z6xb93uJiIyxo/+ksS7yLjS1KzG6iv5i78dhVg/X3u5t1H7juRWqVmodIdz6wGVaIApo1u01kmFRdJHVw==}
     dependencies:
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 16.14.32
+      '@types/react': 18.0.21
       csstype: 3.1.1
     dev: true
 
@@ -16019,16 +16027,6 @@ packages:
       react: 17.0.2
       scheduler: 0.20.2
 
-  /react-dom/18.2.0_react@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
-    peerDependencies:
-      react: ^18.2.0
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
-    dev: false
-
   /react-element-to-jsx-string/14.3.4_wcqkhtmu7mswc6yz4uyexck3ty:
     resolution: {integrity: sha512-t4ZwvV6vwNxzujDQ+37bspnLwA4JlgUPWhLjBJWsNIDceAf6ZKUTCjdm08cN6WeZ5pTMKiCJkmAYnpmR4Bm+dg==}
     peerDependencies:
@@ -16088,7 +16086,7 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.21.0
+      '@babel/runtime': 7.19.4
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 16.14.0
@@ -16305,13 +16303,6 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-
-  /react/18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
 
   /read-pkg-up/1.0.1:
     resolution: {integrity: sha512-WD9MTlNtI55IwYUS27iHh9tK3YoIVhxis8yKhLpTqWtml739uXc9NWTpxoHkfZf3+DkCCsXox94/VWZniuZm6A==}
@@ -16878,12 +16869,6 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-
-  /scheduler/0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
 
   /schema-utils/1.0.0:
     resolution: {integrity: sha512-i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==}
