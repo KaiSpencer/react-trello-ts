@@ -5,7 +5,8 @@
     "test:unit": "turbo run test:unit",
     "test:integration": "turbo run test:integration",
     "lint": "turbo run lint",
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+	"release": "turbo run release"
   },
   "devDependencies": {
     "rome": "^10.0.1",
