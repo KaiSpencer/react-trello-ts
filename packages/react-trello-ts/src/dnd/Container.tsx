@@ -41,7 +41,7 @@ class Container extends Component<ContainerProps> {
 	prevContainer: typeof Container | Element | Text;
 	container: any;
 	constructor(props) {
-		super(props);
+		super({...props, behaviour: "move", orientation:"vertical",className:"reactTrelloBoard"});
 		this.getContainerOptions = this.getContainerOptions.bind(this);
 		this.setRef = this.setRef.bind(this);
 		this.prevContainer = null;
