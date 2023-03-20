@@ -6,7 +6,7 @@
     "test:integration": "turbo run test:integration",
     "lint": "turbo run lint",
     "dev": "turbo run dev",
-	"release": "turbo run release"
+	"release": "turbo run build && changeset publish"
   },
   "devDependencies": {
     "rome": "^10.0.1",

@@ -7,10 +7,6 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
-defaults:
-  run:
-    working-directory: packages/react-trello-ts
-
 jobs:
   release:
     name: Release
