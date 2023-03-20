@@ -6,7 +6,7 @@
     "test:integration": "turbo run test:integration",
     "lint": "turbo run lint",
     "dev": "turbo run dev",
-	"release": "turbo run build && changeset publish"
+	"release": "turbo run build --filter=react-trello-tsc && changeset publish"
   },
   "devDependencies": {
     "rome": "^10.0.1",
