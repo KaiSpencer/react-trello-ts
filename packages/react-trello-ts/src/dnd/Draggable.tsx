@@ -1,29 +1,21 @@
-import React, {
-	FC,
-	HTMLAttributes,
-	PropsWithChildren,
-	ReactElement,
-} from "react";
-import { constants } from "trello-smooth-dnd";
-const { wrapperClass } = constants;
+import React, {Component, ReactElement} from 'react'
+import {constants} from 'trello-smooth-dnd'
+const {wrapperClass} = constants
 
-interface DraggableProps extends HTMLAttributes<HTMLDivElement> {
-	render?: () => ReactElement;
+class Draggable extends Component<{render: ()=>ReactElement, className?:string}> {
+  render() {
+    if (this.props.render) {
+      return React.cloneElement(this.props.render(), {className: wrapperClass})
+    }
+
+    const clsName = `${this.props.className ? this.props.className + ' ' : ''}`
+    return (
+      <div {...this.props} className={`${clsName}${wrapperClass}`}>
+        {this.props.children}
+      </div>
+    )
+  }
 }
-export const Draggable: FC<PropsWithChildren<DraggableProps>> = ({
-	className,
-	render,
-	children,
-	...rest
-}) => {
-	if (render) {
-		return React.cloneElement(render(), { className: wrapperClass });
-	}
 
-	const clsName = `${className ? className + ' ' : ''}`
-	return (
-		<div {...rest} className={`${clsName}${wrapperClass}`}>
-			{children}
-		</div>
-	);
-};
+
+export default Draggable
