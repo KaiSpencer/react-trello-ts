@@ -2,7 +2,7 @@ import React, {Component, ReactElement} from 'react'
 import {constants} from 'trello-smooth-dnd'
 const {wrapperClass} = constants
 
-class Draggable extends Component<{render: ()=>ReactElement, className?:string}> {
+export class Draggable extends Component<{render: ()=>ReactElement, className?:string}> {
   render() {
     if (this.props.render) {
       return React.cloneElement(this.props.render(), {className: wrapperClass})
@@ -18,4 +18,3 @@ class Draggable extends Component<{render: ()=>ReactElement, className?:string}>
 }
 
 
-export default Draggable
