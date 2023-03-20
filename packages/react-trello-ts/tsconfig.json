@@ -14,7 +14,8 @@
     "strict": false,                                      /* Enable all strict type-checking options. */
     "strictFunctionTypes": false,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
     "skipLibCheck": true,
-	"emitDeclarationOnly": true
+	"emitDeclarationOnly": true,
+	"allowSyntheticDefaultImports": true,
   },
     "include": ["./src/**/*.ts", "./src/**/*.tsx", "./src/**/*.js", "./src/**/*.jsx"],
     "exclude": ["node_modules", "dist", "stories"]
