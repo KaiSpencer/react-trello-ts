@@ -18,7 +18,7 @@
     "test:watch": "jest --watch",
     "build": "pnpm build:types && pnpm build:js",
     "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist --allowJs false --outDir dist",
-    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --ignore \"**/*.test.tsx\" --copy-files",
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --ignore \"**/*.test.tsx\" --copy-files --config-file ./.babelrc",
     "docs": "build-storybook -o docs",
     "deploy-storybook": "pnpm build-storybook && gh-pages -d storybook-build",
     "build-storybook": "build-storybook -o storybook-build",
@@ -41,6 +41,7 @@
   },
   "homepage": "https://github.com/KaiSpencer/react-trello-ts",
   "dependencies": {
+    "@babel/runtime": "^7.21.0",
     "@types/classnames": "^2.3.1",
     "autosize": "^4.0.2",
     "classnames": "^2.3.2",
