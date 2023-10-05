@@ -307,6 +307,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 			onClick={() => onLaneClick?.(id)}
 			draggable={false}
 			className={allClassNames}
+			style={style}
 		>
 			<components.LaneHeader
 				onDelete={removeLane}
