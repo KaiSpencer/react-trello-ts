@@ -1,5 +1,11 @@
 # react-trello-ts
 
+## 2.0.16
+
+### Patch Changes
+
+- dd24717: bug/ onCardUpdate should fire - #26
+
 ## 2.0.15
 
 ### Patch Changes
