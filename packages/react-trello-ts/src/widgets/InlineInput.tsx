@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useRef, useState} from 'react'
-import {InlineInput as _InlineInput} from 'rt/styles/Base'
+import {InlineInput as _InlineInput} from '@/styles/Base'
 import autosize from 'autosize'
 
 interface InlineInputProps {
