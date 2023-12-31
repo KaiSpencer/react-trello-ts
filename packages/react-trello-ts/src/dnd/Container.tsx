@@ -75,13 +75,12 @@ class Container extends Component<ContainerProps> {
 	render() {
 		if (this.props.render) {
 			return this.props.render(this.setRef);
-		} else {
-			return (
-				<div style={this.props.style} ref={this.setRef}>
-					{this.props.children}
-				</div>
-			);
 		}
+		return (
+			<div style={this.props.style} ref={this.setRef}>
+				{this.props.children}
+			</div>
+		);
 	}
 
 	setRef(element) {

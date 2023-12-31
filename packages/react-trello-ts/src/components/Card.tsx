@@ -1,11 +1,18 @@
-import React, {CSSProperties, FC, PropsWithChildren,} from "react";
-import {CardHeader, CardRightContent, CardTitle, Detail, Footer, MovableCardWrapper,} from "@/styles/Base";
-import {InlineInput} from "@/widgets";
-import {Tag, TagProps} from "./Card/Tag";
-import {DeleteButton} from "@/widgets";
-import {createTranslate} from "..";
-import {Card as ICard} from "../types/Board";
-import {StyledComponent} from "styled-components";
+import {
+	CardHeader,
+	CardRightContent,
+	CardTitle,
+	Detail,
+	Footer,
+	MovableCardWrapper,
+} from "@/styles/Base";
+import { InlineInput } from "@/widgets";
+import { DeleteButton } from "@/widgets";
+import React, { CSSProperties, FC, PropsWithChildren } from "react";
+import { StyledComponent } from "styled-components";
+import { createTranslate } from "..";
+import { Card as ICard } from "../types/Board";
+import { Tag, TagProps } from "./Card/Tag";
 
 /**
  * Card component type
@@ -26,7 +33,7 @@ import {StyledComponent} from "styled-components";
  * 	)
  * }
  */
-export type CardComponent<TCustomCardProps extends {} = {}> = FC<
+export type CardComponent<TCustomCardProps extends {} = object> = FC<
 	PropsWithChildren<CardProps & TCustomCardProps>
 >;
 

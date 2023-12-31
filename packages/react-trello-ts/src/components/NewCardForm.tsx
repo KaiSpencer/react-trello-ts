@@ -1,4 +1,5 @@
-import React, {Component, FC, PropsWithChildren, useState} from "react";
+import React, { Component, FC, PropsWithChildren, useState } from "react";
+import createTranslate from "../helpers/createTranslate";
 import {
 	CardForm,
 	CardHeader,
@@ -9,7 +10,6 @@ import {
 } from "../styles/Base";
 import { AddButton, CancelButton } from "../styles/Elements";
 import { EditableLabel } from "../widgets/EditableLabel";
-import createTranslate from "../helpers/createTranslate";
 
 export interface FormState {
 	title: string;

@@ -1,20 +1,20 @@
 import React from "react";
 
-import { Draggable } from "./dnd/Draggable";
-import Container from "./dnd/Container";
+import * as DefaultComponents from "./components";
 import {
 	BoardContainer,
 	BoardContainerProps,
 } from "./controllers/BoardContainer";
 import { Lane } from "./controllers/Lane";
+import Container from "./dnd/Container";
+import { Draggable } from "./dnd/Draggable";
 import deprecationWarnings from "./helpers/deprecationWarnings";
-import * as DefaultComponents from "./components";
 import locales from "./locales";
 
 export * from "./widgets";
 
-import createTranslate from "./helpers/createTranslate";
 import { Board } from "./controllers/Board";
+import createTranslate from "./helpers/createTranslate";
 
 export { Draggable, Container, BoardContainer, Lane, createTranslate, locales };
 

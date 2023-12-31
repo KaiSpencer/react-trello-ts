@@ -117,8 +117,8 @@ export const LaneHeader = styled(Header)`
       padding: 0px;
       line-height: 30px;
     `} ${(props) =>
-	!props.editLaneTitle &&
-	css`
+		!props.editLaneTitle &&
+		css`
       padding: 0px 5px;
     `};
 `;

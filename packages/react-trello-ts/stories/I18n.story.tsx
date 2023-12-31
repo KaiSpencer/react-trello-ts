@@ -1,7 +1,7 @@
+import { storiesOf } from "@storybook/react";
 // @ts-ignore
 import React from "react";
-import { storiesOf } from "@storybook/react";
-import { useTranslation, I18nextProvider } from "react-i18next";
+import { I18nextProvider, useTranslation } from "react-i18next";
 
 import Board from "../src";
 import createTranslate from "../src/helpers/createTranslate";

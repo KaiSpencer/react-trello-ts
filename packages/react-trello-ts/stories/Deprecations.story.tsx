@@ -1,12 +1,12 @@
+import { storiesOf } from "@storybook/react";
 // @ts-nocheck
 import React, { Component } from "react";
-import { storiesOf } from "@storybook/react";
 
 import Board from "../src";
 
-import "./board.css";
 import { CardProps } from "rt/components/Card";
 import { Tag } from "rt/components/Card/Tag";
+import "./board.css";
 
 const data = require("./data/base.json");
 

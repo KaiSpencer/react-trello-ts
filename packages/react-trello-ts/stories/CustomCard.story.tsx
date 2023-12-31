@@ -1,11 +1,11 @@
-import React, { CSSProperties } from "react";
 import { storiesOf } from "@storybook/react";
-import { MovableCardWrapper } from "rt/styles/Base";
-import { DeleteButton } from "./../src/widgets/DeleteButton";
-import Board from "../src";
-import { Tag } from "rt/components/Card/Tag";
-import { BoardData } from "rt/types/Board";
+import React, { CSSProperties } from "react";
 import { CardComponent } from "rt/components/Card";
+import { Tag } from "rt/components/Card/Tag";
+import { MovableCardWrapper } from "rt/styles/Base";
+import { BoardData } from "rt/types/Board";
+import Board from "../src";
+import { DeleteButton } from "./../src/widgets/DeleteButton";
 
 const CustomCard: CardComponent<{
 	name: string;

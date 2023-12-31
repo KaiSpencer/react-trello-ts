@@ -1,6 +1,6 @@
-import { addDecorator, configure } from "@storybook/react";
 import { withInfo } from "@storybook/addon-info";
 import { withOptions } from "@storybook/addon-options";
+import { addDecorator, configure } from "@storybook/react";
 
 addDecorator(
 	withOptions({

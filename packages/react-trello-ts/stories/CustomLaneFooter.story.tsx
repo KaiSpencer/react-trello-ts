@@ -1,8 +1,8 @@
-import React from "react";
 import { storiesOf } from "@storybook/react";
+import React from "react";
 
-import Board from "../src";
 import { LaneFooterComponent } from "rt/components/Lane/LaneFooter";
+import Board from "../src";
 
 import data from "./data/collapsible.json";
 

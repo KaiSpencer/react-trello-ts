@@ -1,9 +1,9 @@
-import React from "react";
 import { storiesOf } from "@storybook/react";
+import React from "react";
 
-import "./board.css";
-import Board from "../src";
 import { BoardData } from "rt/types/Board";
+import Board from "../src";
+import "./board.css";
 const data = require("./data/base.json");
 
 storiesOf("Styling", module).add(

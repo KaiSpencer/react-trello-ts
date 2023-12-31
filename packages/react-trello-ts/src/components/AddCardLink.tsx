@@ -1,6 +1,6 @@
-import React, {FC, HTMLAttributes, PropsWithChildren} from 'react'
-import {AddCardLink as _AddCardLink} from '../styles/Base'
-import {createTranslate} from '..'
+import React, { FC, HTMLAttributes, PropsWithChildren } from "react";
+import { createTranslate } from "..";
+import { AddCardLink as _AddCardLink } from "../styles/Base";
 
 /**
  * AddCardLink component type
@@ -21,13 +21,14 @@ import {createTranslate} from '..'
  * 	)
  * }
  */
-export type AddCardLinkComponent<TCustomAddCardLinkProps extends {} = {}> = FC<
-  PropsWithChildren<AddCardLinkProps & TCustomAddCardLinkProps>
->
+export type AddCardLinkComponent<TCustomAddCardLinkProps extends {} = object> =
+	FC<PropsWithChildren<AddCardLinkProps & TCustomAddCardLinkProps>>;
 
-interface AddCardLinkProps extends HTMLAttributes<HTMLAnchorElement | HTMLButtonElement> {
-  t: typeof createTranslate
+interface AddCardLinkProps
+	extends HTMLAttributes<HTMLAnchorElement | HTMLButtonElement> {
+	t: typeof createTranslate;
 }
-export const AddCardLink: FC<PropsWithChildren<AddCardLinkProps>> = ({onClick, t}) => (
-  <_AddCardLink onClick={onClick}>{t('Click to add card')}</_AddCardLink>
-)
+export const AddCardLink: FC<PropsWithChildren<AddCardLinkProps>> = ({
+	onClick,
+	t,
+}) => <_AddCardLink onClick={onClick}>{t("Click to add card")}</_AddCardLink>;

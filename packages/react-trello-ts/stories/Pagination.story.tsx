@@ -1,5 +1,5 @@
-import React from "react";
 import { storiesOf } from "@storybook/react";
+import React from "react";
 
 import Board from "../src";
 
@@ -9,8 +9,8 @@ storiesOf("Basic Functions", module).add(
 		const PER_PAGE = 15;
 
 		function delayedPromise(durationInMs, resolutionPayload) {
-			return new Promise(function (resolve) {
-				setTimeout(function () {
+			return new Promise((resolve) => {
+				setTimeout(() => {
 					resolve(resolutionPayload);
 				}, durationInMs);
 			});
@@ -18,7 +18,7 @@ storiesOf("Basic Functions", module).add(
 
 		function generateCards(requestedPage = 1) {
 			const cards = [];
-			let fetchedItems = (requestedPage - 1) * PER_PAGE;
+			const fetchedItems = (requestedPage - 1) * PER_PAGE;
 			for (let i = fetchedItems + 1; i <= fetchedItems + PER_PAGE; i++) {
 				cards.push({
 					id: `${i}`,
@@ -34,7 +34,7 @@ storiesOf("Basic Functions", module).add(
 			if (requestedPage > 2) {
 				return delayedPromise(2000, []);
 			}
-			let newCards = generateCards(requestedPage);
+			const newCards = generateCards(requestedPage);
 			return delayedPromise(2000, newCards);
 		}
 

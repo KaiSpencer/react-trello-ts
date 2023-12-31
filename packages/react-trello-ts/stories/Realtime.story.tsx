@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import { storiesOf } from "@storybook/react";
+import React, { Component } from "react";
 import debug from "./helpers/debug";
 
 import Board from "../src";
@@ -45,31 +45,37 @@ class RealtimeBoard extends Component {
 	};
 
 	modifyLaneTitle = () => {
-		const data = {...this.state.boardData,
+		const data = {
+			...this.state.boardData,
 			lanes: this.state.boardData.lanes.map((lane, index) => {
 				if (index === 1) {
-					return {...lane, title: "New Lane Title"}
+					return { ...lane, title: "New Lane Title" };
 				}
-				return lane
-			})
-		}
+				return lane;
+			}),
+		};
 
 		this.setState({ boardData: data });
 	};
 
 	modifyCardTitle = () => {
-		const data = {...this.state.boardData,
+		const data = {
+			...this.state.boardData,
 			lanes: this.state.boardData.lanes.map((lane, index) => {
 				if (index === 1) {
-					return {...lane, cards: lane.cards.map((card, index) => {
-						if (index === 0) {
-							return {...card, title: "New Card Title"}
-						}
-						return card
-					})}
+					return {
+						...lane,
+						cards: lane.cards.map((card, index) => {
+							if (index === 0) {
+								return { ...card, title: "New Card Title" };
+							}
+							return card;
+						}),
+					};
 				}
-				return lane
-			})}
+				return lane;
+			}),
+		};
 		this.setState({ boardData: data });
 	};
 

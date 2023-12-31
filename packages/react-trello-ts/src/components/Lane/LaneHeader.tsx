@@ -4,16 +4,18 @@ import React, {
 	HTMLAttributes,
 	PropsWithChildren,
 } from "react";
-import { InlineInput } from "../../widgets/InlineInput";
+import createTranslate from "../../helpers/createTranslate";
 import {
-	Title,
 	LaneHeader as _LaneHeader,
 	RightContent,
+	Title,
 } from "../../styles/Base";
+import { InlineInput } from "../../widgets/InlineInput";
 import { LaneMenu } from "./LaneHeader/LaneMenu";
-import createTranslate from "../../helpers/createTranslate";
 
-export type LaneHeaderProps = _LaneHeaderProps & { [key: string]: any };
+export type LaneHeaderProps = _LaneHeaderProps & {
+	[key: string]: any;
+};
 interface _LaneHeaderProps extends HTMLAttributes<HTMLHeadElement> {
 	updateTitle?: (title: string) => void;
 	canAddLanes?: boolean;

@@ -1,20 +1,20 @@
 import React, { FC, PropsWithChildren } from "react";
 import { Popover } from "react-popopo";
 
+import createTranslate from "../../../helpers/createTranslate";
 import {
-	CustomPopoverContent,
 	CustomPopoverContainer,
+	CustomPopoverContent,
 } from "../../../styles/Base";
 import {
-	LaneMenuTitle,
-	LaneMenuHeader,
-	LaneMenuContent,
 	DeleteWrapper,
-	LaneMenuItem,
 	GenDelButton,
+	LaneMenuContent,
+	LaneMenuHeader,
+	LaneMenuItem,
+	LaneMenuTitle,
 	MenuButton,
 } from "../../../styles/Elements";
-import createTranslate from "../../../helpers/createTranslate";
 
 interface LaneMenuProps {
 	t: typeof createTranslate;

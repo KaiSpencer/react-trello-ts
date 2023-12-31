@@ -1,10 +1,10 @@
-import React, { createContext, FC, PropsWithChildren } from "react";
-import { v1 } from "uuid";
-import { BoardContainer } from "./BoardContainer";
-import * as DefaultComponets from "../components";
-import { BoardData } from "../types/Board";
-import { store } from "../store/store";
 import classNames from "classnames";
+import React, { FC, PropsWithChildren, createContext } from "react";
+import { v1 } from "uuid";
+import * as DefaultComponets from "../components";
+import { store } from "../store/store";
+import { BoardData } from "../types/Board";
+import { BoardContainer } from "./BoardContainer";
 
 export const Board: FC<
 	PropsWithChildren<{
@@ -15,7 +15,7 @@ export const Board: FC<
 		t?: any;
 	}>
 > = ({ data, children, className, components, id, t, ...rest }) => {
-	const allClassNames = classNames('react-trello-board', className || '')
+	const allClassNames = classNames("react-trello-board", className || "");
 
 	return (
 		<BoardContext.Provider value={store}>

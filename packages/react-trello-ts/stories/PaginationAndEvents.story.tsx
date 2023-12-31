@@ -1,15 +1,15 @@
-import React, { FC, PropsWithChildren } from "react";
 import { storiesOf } from "@storybook/react";
+import React, { FC, PropsWithChildren } from "react";
 
-import Board from "../src";
 import { BoardData } from "rt/types/Board";
 import { EventBusHandle } from "rt/types/EventBus";
+import Board from "../src";
 
 const PER_PAGE = 15;
 
 function generateCards(requestedPage = 1) {
 	const cards = [];
-	let fetchedItems = (requestedPage - 1) * PER_PAGE;
+	const fetchedItems = (requestedPage - 1) * PER_PAGE;
 	for (let i = fetchedItems + 1; i <= fetchedItems + PER_PAGE; i++) {
 		cards.push({
 			id: `${i}`,
@@ -21,8 +21,8 @@ function generateCards(requestedPage = 1) {
 	return cards;
 }
 const delayedPromise = (durationInMs, resolutionPayload) => {
-	return new Promise(function (resolve) {
-		setTimeout(function () {
+	return new Promise((resolve) => {
+		setTimeout(() => {
 			resolve(resolutionPayload);
 		}, durationInMs);
 	});
@@ -61,7 +61,7 @@ const BoardWrapper: FC<PropsWithChildren<{ data: BoardData }>> = ({
 		});
 	};
 	const paginate = (requestedPage, laneId) => {
-		let newCards = generateCards(requestedPage);
+		const newCards = generateCards(requestedPage);
 		return delayedPromise(2000, newCards);
 	};
 

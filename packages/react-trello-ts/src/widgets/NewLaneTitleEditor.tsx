@@ -1,3 +1,4 @@
+import autosize from "autosize";
 import React, {
 	HTMLAttributes,
 	PropsWithChildren,
@@ -5,7 +6,6 @@ import React, {
 	useState,
 } from "react";
 import { InlineInput } from "../styles/Base";
-import autosize from "autosize";
 
 interface NewLaneTitleEditorProps extends HTMLAttributes<HTMLTextAreaElement> {
 	onSave?: (inputValue: string) => void;
