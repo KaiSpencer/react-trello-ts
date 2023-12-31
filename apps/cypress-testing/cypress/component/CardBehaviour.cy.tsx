@@ -57,72 +57,72 @@ describe("Testing card behaviour", () => {
 	});
 
 	it("Can drag a card between lanes", () => {
-    cy.fixture("data.json").then((data) => {
-      cy.mount(<Board data={data} />);
-      cy.findCardByTitle("Buy milk").move({
-        deltaX: 300,
-        deltaY: 50,
-        force: true,
-      });
-      cy.get(".horizontal > :nth-child(1)")
-        .findByText("Buy milk")
-        .should("not.exist");
-      cy.get(".horizontal > :nth-child(2)")
-        .findByText("Buy milk")
-        .should("exist");
-    });
-  });
+		cy.fixture("data.json").then((data) => {
+			cy.mount(<Board data={data} />);
+			cy.findCardByTitle("Buy milk").move({
+				deltaX: 300,
+				deltaY: 50,
+				force: true,
+			});
+			cy.get(".horizontal > :nth-child(1)")
+				.findByText("Buy milk")
+				.should("not.exist");
+			cy.get(".horizontal > :nth-child(2)")
+				.findByText("Buy milk")
+				.should("exist");
+		});
+	});
 
-  it("Can drag a card between multiple lanes", () => {
-    cy.fixture("data.json").then((data) => {
-      cy.mount(<Board data={data} />);
-      cy.findCardByTitle("Buy milk").move({
-        deltaX: 300,
-        deltaY: 50,
-        force: true,
-      });
-      cy.get(".horizontal > :nth-child(1)")
-        .findByText("Buy milk")
-        .should("not.exist");
-      cy.get(".horizontal > :nth-child(2)")
-        .findByText("Buy milk")
-        .should("exist");
+	it("Can drag a card between multiple lanes", () => {
+		cy.fixture("data.json").then((data) => {
+			cy.mount(<Board data={data} />);
+			cy.findCardByTitle("Buy milk").move({
+				deltaX: 300,
+				deltaY: 50,
+				force: true,
+			});
+			cy.get(".horizontal > :nth-child(1)")
+				.findByText("Buy milk")
+				.should("not.exist");
+			cy.get(".horizontal > :nth-child(2)")
+				.findByText("Buy milk")
+				.should("exist");
 
-      cy.findCardByTitle("Buy milk").move({
-        deltaX: -300,
-        deltaY: -50,
-        force: true,
-      });
-      cy.get(".horizontal > :nth-child(1)")
-        .findByText("Buy milk")
-        .should("exist");
-      cy.get(".horizontal > :nth-child(2)")
-        .findByText("Buy milk")
-        .should("not.exist");
+			cy.findCardByTitle("Buy milk").move({
+				deltaX: -300,
+				deltaY: -50,
+				force: true,
+			});
+			cy.get(".horizontal > :nth-child(1)")
+				.findByText("Buy milk")
+				.should("exist");
+			cy.get(".horizontal > :nth-child(2)")
+				.findByText("Buy milk")
+				.should("not.exist");
 
-      cy.findCardByTitle("Buy milk").move({
-        deltaX: 550,
-        deltaY: -100,
-        force: true,
-      });
-      cy.get(".horizontal > :nth-child(1)")
-        .findByText("Buy milk")
-        .should("not.exist");
-      cy.get(".horizontal > :nth-child(3)")
-        .findByText("Buy milk")
-        .should("exist");
+			cy.findCardByTitle("Buy milk").move({
+				deltaX: 550,
+				deltaY: -100,
+				force: true,
+			});
+			cy.get(".horizontal > :nth-child(1)")
+				.findByText("Buy milk")
+				.should("not.exist");
+			cy.get(".horizontal > :nth-child(3)")
+				.findByText("Buy milk")
+				.should("exist");
 
-       cy.findCardByTitle("Buy milk").move({
-        deltaX: -550,
-        deltaY: 100,
-        force: true,
-      });
-      cy.get(".horizontal > :nth-child(1)")
-        .findByText("Buy milk")
-        .should("exist");
-      cy.get(".horizontal > :nth-child(3)")
-        .findByText("Buy milk")
-        .should("not.exist");
-    });
-  })
+			cy.findCardByTitle("Buy milk").move({
+				deltaX: -550,
+				deltaY: 100,
+				force: true,
+			});
+			cy.get(".horizontal > :nth-child(1)")
+				.findByText("Buy milk")
+				.should("exist");
+			cy.get(".horizontal > :nth-child(3)")
+				.findByText("Buy milk")
+				.should("not.exist");
+		});
+	});
 });

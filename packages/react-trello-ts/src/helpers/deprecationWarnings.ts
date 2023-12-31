@@ -17,9 +17,11 @@ const warn = (prop: keyof typeof REPLACE_TABLE) => {
 };
 
 export default (props) => {
-	Object.keys(REPLACE_TABLE).forEach((key: keyof typeof REPLACE_TABLE) => {
-		if (props.hasOwnProperty(key)) {
-			warn(key);
+	for (const key in REPLACE_TABLE) {
+		if (Object.prototype.hasOwnProperty.call(REPLACE_TABLE, key)) {
+			warn(key as keyof typeof REPLACE_TABLE);
+		} else {
+			console.warn(`react-trello property '${key}' is removed`);
 		}
-	});
+	}
 };

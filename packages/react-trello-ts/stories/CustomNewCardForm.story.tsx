@@ -1,8 +1,8 @@
-import React, { Component } from "react";
 import { storiesOf } from "@storybook/react";
+import React, { Component } from "react";
 
+import { NewCardFormProps } from "@/components/NewCardForm";
 import Board from "../src";
-import {NewCardFormProps} from "@/components/NewCardForm";
 
 const data = require("./data/base.json");
 
@@ -14,7 +14,7 @@ class NewCardForm extends Component<NewCardFormProps> {
 			label: "",
 			laneId: this.props.laneId,
 			title: this.titleRef.value,
-			description: this.descRef.value
+			description: this.descRef.value,
 		});
 	setTitleRef = (ref) => (this.titleRef = ref);
 	setDescRef = (ref) => (this.descRef = ref);
@@ -57,7 +57,7 @@ storiesOf("Custom Components", module).add(
 			data={data}
 			editable={true}
 			// @ts-ignore
-			components={{ NewCardForm: NewCardForm}}
+			components={{ NewCardForm: NewCardForm }}
 		/>
 	),
 	{ info: "Pass a custom new card form compoment to add card" },

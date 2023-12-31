@@ -1,12 +1,12 @@
-import React from "react";
 import { storiesOf } from "@storybook/react";
+import React from "react";
 
 import { MovableCardWrapper } from "rt/styles/Base";
 import debug from "./helpers/debug";
 
-import Board from "../src";
 import produce from "immer";
 import { BoardData, Card } from "rt/types/Board";
+import Board from "../src";
 
 const CustomCard = (props) => {
 	return (

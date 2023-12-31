@@ -18345,6 +18345,7 @@ Object {
                     >
                       <button
                         style="cursor: pointer;"
+                        type="submit"
                       >
                         ?
                       </button>
@@ -18456,6 +18457,7 @@ Object {
                     >
                       <button
                         style="cursor: pointer;"
+                        type="submit"
                       >
                         ?
                       </button>
@@ -18754,6 +18756,7 @@ Object {
                   >
                     <button
                       style="cursor: pointer;"
+                      type="submit"
                     >
                       ?
                     </button>
@@ -18865,6 +18868,7 @@ Object {
                   >
                     <button
                       style="cursor: pointer;"
+                      type="submit"
                     >
                       ?
                     </button>

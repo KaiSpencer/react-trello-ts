@@ -1,0 +1,19 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.0.0/schema.json",
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"suspicious": {
+				"noExplicitAny": "off"
+			},
+			"a11y": { "useButtonType": "off" }
+		},
+
+		"ignore": ["coverage", "node_modules", "*.story.tsx"]
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": true
+	}
+}

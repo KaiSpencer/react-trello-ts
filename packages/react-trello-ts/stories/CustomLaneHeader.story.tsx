@@ -1,8 +1,8 @@
-import React from "react";
 import { storiesOf } from "@storybook/react";
+import React from "react";
 
-import Board from "../src";
 import { LaneHeaderProps } from "rt/components/Lane/LaneHeader";
+import Board from "../src";
 
 const CustomLaneHeader = ({
 	label,
@@ -31,7 +31,11 @@ const CustomLaneHeader = ({
 				<div style={{ fontSize: 14, fontWeight: "bold" }}>{title}</div>
 				{label && (
 					<div style={{ width: "30%", textAlign: "right", fontSize: 13 }}>
-						<button onClick={buttonHandler} style={{ cursor: "pointer" }}>
+						<button
+							onClick={buttonHandler}
+							style={{ cursor: "pointer" }}
+							type="submit"
+						>
 							?
 						</button>
 					</div>

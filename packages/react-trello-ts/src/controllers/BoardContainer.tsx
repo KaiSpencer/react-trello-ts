@@ -5,17 +5,17 @@ import React, {
 	useEffect,
 	useState,
 } from "react";
+import { PopoverWrapper } from "react-popopo";
 import Container from "../dnd/Container";
 import { Draggable } from "../dnd/Draggable";
 import { Lane } from "./Lane";
-import { PopoverWrapper } from "react-popopo";
 
 import { createTranslate } from "..";
-import { BoardData, Card, Lane as ILane } from "../types/Board";
 import { FormState as NewCardFormState } from "../components/NewCardForm";
-import * as DefaultComponents from "./../components";
-import { EventBusHandle } from "../types/EventBus";
 import { useBoard } from "../store/useBoard";
+import { BoardData, Card, Lane as ILane } from "../types/Board";
+import { EventBusHandle } from "../types/EventBus";
+import * as DefaultComponents from "./../components";
 export interface BoardContainerProps {
 	id?: string;
 	components?: Partial<typeof DefaultComponents>;
@@ -121,6 +121,7 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 }) => {
 	const [addLaneMode, setAddLaneMode] = useState(false);
 	const board = useBoard();
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		board.initializeLanes(data.lanes);
 		if (eventBusHandle) {
@@ -131,6 +132,7 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 		};
 	}, []);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		if (JSON.stringify(board.data) !== JSON.stringify(data)) {
 			onDataChange(data);

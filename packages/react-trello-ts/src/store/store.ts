@@ -1,6 +1,6 @@
 import produce from "immer";
-import { BoardData, Card, Lane } from "../types/Board";
 import create from "zustand";
+import { BoardData, Card, Lane } from "../types/Board";
 
 export interface State {
 	data: BoardData;
@@ -123,6 +123,7 @@ export const store = create<State>()((set) => ({
 	updateLane: (lane) =>
 		set(
 			produce<State>((state) => {
+				// biome-ignore lint/style/noParameterAssign: this is as expected with immer
 				lane = { ...lane, ...state.data.lanes.find((l) => l.id === lane.id) };
 			}),
 		),

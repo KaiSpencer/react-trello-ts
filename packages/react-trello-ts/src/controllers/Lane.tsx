@@ -1,12 +1,12 @@
 import React, { CSSProperties, FC, PropsWithChildren, useEffect } from "react";
 import { v1 } from "uuid";
 
+import classNames from "classnames";
+import { components, createTranslate } from "..";
 import Container from "../dnd/Container";
 import { Draggable } from "../dnd/Draggable";
-import classNames from 'classnames'
-import { Card, Lane as ILane } from "../types/Board";
-import { components, createTranslate } from "..";
 import { useBoard } from "../store/useBoard";
+import { Card, Lane as ILane } from "../types/Board";
 
 interface LaneProps {
 	id: string;
@@ -116,6 +116,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 	const [addCardMode, setAddCardMode] = React.useState(false);
 	const [isDraggingOver, setIsDraggingOver] = React.useState(false);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		setCurrentPageState(currentPage);
 	}, [cards]);
@@ -127,9 +128,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		if (!sortFunction) {
 			return cards;
 		}
-		return cards.concat().sort(function (card1, card2) {
-			return sortFunction(card1, card2);
-		});
+		return cards.concat().sort((card1, card2) => sortFunction(card1, card2));
 	};
 	const addNewCard = (params: {
 		title?: string;
@@ -252,7 +251,8 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 					/>
 				);
 				return cardDraggable &&
-					(!card.hasOwnProperty("draggable") || card.draggable) ? (
+					(!Object.prototype.hasOwnProperty.call(card, "draggable") ||
+						card.draggable) ? (
 					<Draggable key={card.id}>{cardToRender}</Draggable>
 				) : (
 					<span key={card.id}>{cardToRender}</span>
@@ -298,7 +298,7 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		);
 	};
 
-    const allClassNames = classNames('react-trello-lane', className || '')
+	const allClassNames = classNames("react-trello-lane", className || "");
 	const showFooter = collapsibleLanes && cards.length > 0;
 	return (
 		<components.Section

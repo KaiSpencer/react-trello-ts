@@ -1,5 +1,5 @@
-import React, { Component } from "react";
 import { storiesOf } from "@storybook/react";
+import React, { Component } from "react";
 import debug from "./helpers/debug";
 
 import Board from "../src";
