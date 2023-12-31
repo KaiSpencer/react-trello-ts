@@ -132,6 +132,7 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 		};
 	}, []);
 
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		if (JSON.stringify(board.data) !== JSON.stringify(data)) {
 			onDataChange(data);
