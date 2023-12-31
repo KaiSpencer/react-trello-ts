@@ -137,7 +137,7 @@ export const BoardContainer: FC<PropsWithChildren<BoardContainerProps>> = ({
 			onDataChange(data);
 			board.initializeLanes(data.lanes);
 		}
-	}, [data, board, onDataChange]);
+	}, [data]);
 
 	const wireEventBus = () => {
 		const eventBus: EventBusHandle = {
