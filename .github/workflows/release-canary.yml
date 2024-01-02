@@ -65,7 +65,7 @@ jobs:
 
             const packageJson = JSON.parse(fs.readFileSync("package.json"));
             const version = packageJson.version;
-            text += `pnpm add react-trello-ts@${version}\n\n`
+            text += `pnpm add react-trello-ts@${version}```\n\n`
             text += `Current bundle size (minified + gzipped): ![NPM Bundle MIN Size](https://img.shields.io/bundlephobia/minzip/react-trello-ts.svg)\n\n`
             text += `New bundle size (minified + gzipped): ![NPM Bundle MIN Size](https://img.shields.io/bundlephobia/minzip/react-trello-ts@${version})\n\n`
 
