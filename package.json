@@ -1,6 +1,6 @@
 {
 	"name": "react-trello-ts",
-	"version": "2.0.16",
+	"version": "2.1.0",
 	"description": "Pluggable typesafe components to add a trello like kanban board to your application",
 	"types": "./dist/index.d.ts",
 	"main": "./dist/index.js",
@@ -10,7 +10,10 @@
 			"import": "./dist/index.mjs"
 		}
 	},
-	"files": ["dist", "README"],
+	"files": [
+		"dist",
+		"README"
+	],
 	"scripts": {
 		"prepublish": "pnpm build",
 		"storybook": "storybook dev -p 6006",
@@ -30,7 +33,12 @@
 		"type": "git",
 		"url": "https://github.com/KaiSpencer/react-trello-ts"
 	},
-	"keywords": ["react", "trello", "board", "typescript"],
+	"keywords": [
+		"react",
+		"trello",
+		"board",
+		"typescript"
+	],
 	"author": "Kai Spencer",
 	"license": "MIT",
 	"bugs": {
