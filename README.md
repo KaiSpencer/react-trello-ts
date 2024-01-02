@@ -1,10 +1,12 @@
 # React Trello TS
 
+
+[![npm version](https://badge.fury.io/js/react-trello-ts.svg)](https://badge.fury.io/js/react-trello-ts)
+[![NPM Bundle MIN Size](https://img.shields.io/bundlephobia/minzip/react-trello-ts.svg)](https://npmjs.com/react-trello-ts)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 
 Typescript fork of [rcdexta/react-trello](https://github.com/rcdexta/react-trello)
 
