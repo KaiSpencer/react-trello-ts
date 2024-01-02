@@ -1,5 +1,11 @@
 # react-trello-ts
 
+## 2.1.0
+
+### Minor Changes
+
+- 4320234: repo rework, no expected functional change.
+
 ## 2.0.16
 
 ### Patch Changes
