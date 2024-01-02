@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Components DragnDropStyling smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Planned
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card1"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                         style="padding: 6px;"
+                >
+                  <header style="border-bottom: 1px solid rgb(238, 238, 238); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+                    <div style="font-size: 14px; font-weight: bold;">
+                      John Smith
+                    </div>
+                  </header>
+                  <div style="font-size: 12px; color: rgb(189, 59, 54);">
+                    <div style="color: rgb(76, 76, 76); font-weight: bold;">
+                      SMS received at 12:13pm today
+                    </div>
+                    <div style="padding: 5px 0px;">
+                      <i>
+                        Thanks. Please schedule me for an estimate on Monday.
+                      </i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card2"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                         style="padding: 6px;"
+                >
+                  <header style="border-bottom: 1px solid rgb(238, 238, 238); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+                    <div style="font-size: 14px; font-weight: bold;">
+                      Card Weathers
+                    </div>
+                  </header>
+                  <div style="font-size: 12px; color: rgb(189, 59, 54);">
+                    <div style="color: rgb(76, 76, 76); font-weight: bold;">
+                      Email received at 1:14pm
+                    </div>
+                    <div style="padding: 5px 0px;">
+                      <i>
+                        Is the estimate free, and can someone call me soon?
+                      </i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Work In Progress
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card3"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                         style="padding: 6px;"
+                >
+                  <header style="border-bottom: 1px solid rgb(238, 238, 238); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+                    <div style="font-size: 14px; font-weight: bold;">
+                      Michael Caine
+                    </div>
+                  </header>
+                  <div style="font-size: 12px; color: rgb(189, 59, 54);">
+                    <div style="color: rgb(76, 76, 76); font-weight: bold;">
+                      Email received at 4:23pm today
+                    </div>
+                    <div style="padding: 5px 0px;">
+                      <i>
+                        You are welcome. Interested in doing business with you again
+                      </i>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;

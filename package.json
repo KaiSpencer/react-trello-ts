@@ -1,20 +1,81 @@
 {
-	"name": "react-trello-ts-root",
+	"name": "react-trello-ts",
+	"version": "2.0.16",
+	"description": "Pluggable typesafe components to add a trello like kanban board to your application",
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": ["dist", "README"],
 	"scripts": {
-		"build": "turbo run build",
-		"test:unit": "turbo run test:unit",
-		"test:integration": "turbo run test:integration",
-		"lint": "turbo run lint",
-		"format": "biome format .",
-		"dev": "turbo run dev",
-		"release": "turbo run build --filter=react-trello-ts && changeset publish"
+		"prepublish": "pnpm build",
+		"storybook": "storybook dev -p 6006",
+		"storybook:no-open": "pnpm storybook --no-open",
+		"test": "start-server-and-test storybook:no-open http://localhost:6006 test-storybook",
+		"test-storybook": "test-storybook",
+		"dev": "tsup --watch",
+		"build": "tsup",
+		"docs": "storybook build -o docs",
+		"deploy-storybook": "pnpm storybook build && gh-pages -d storybook-build",
+		"build-storybook": "storybook build -o storybook-build",
+		"lint": "pnpm biome check .",
+		"release": "pnpm build && pnpm changeset publish",
+		"changeset": "changeset"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KaiSpencer/react-trello-ts"
+	},
+	"keywords": ["react", "trello", "board", "typescript"],
+	"author": "Kai Spencer",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/KaiSpencer/react-trello-ts/issues"
+	},
+	"homepage": "https://github.com/KaiSpencer/react-trello-ts",
+	"dependencies": {
+		"autosize": "^4.0.2",
+		"classnames": "^2.3.2",
+		"immer": "^9.0.15",
+		"react-popopo": "^2.1.9",
+		"trello-smooth-dnd": "1.0.0",
+		"uuid": "^9",
+		"zustand": "^4.1.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^1.4.1",
-		"turbo": "^1.6.3",
-		"typescript": "^4.9.3"
+		"@biomejs/biome": "1.4.1",
+		"@storybook/addon-essentials": "^7.6.7",
+		"@storybook/builder-vite": "^7.6.7",
+		"@storybook/cli": "7.6.7",
+		"@storybook/core-events": "^7.6.7",
+		"@storybook/react": "7.6.7",
+		"@storybook/react-vite": "^7.6.7",
+		"@storybook/test-runner": "^0.16.0",
+		"@types/node": "^18.7.14",
+		"@types/react": "^16",
+		"@types/react-dom": "^16",
+		"@types/styled-components": "^5.1.26",
+		"@types/uuid": "^8.3.4",
+		"gh-pages": "^4.0.0",
+		"i18next": "^17.0.3",
+		"playwright": "^1.40.1",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-i18next": "^10.11.0",
+		"start-server-and-test": "^2.0.3",
+		"storybook": "7.6.7",
+		"styled-components": "^5.3.9",
+		"tsup": "^8.0.1",
+		"typescript": "^5.3.3",
+		"@changesets/cli": "^2.27.1"
 	},
-	"dependencies": {
-		"@changesets/cli": "^2.26.0"
+	"peerDependencies": {
+		"react": ">=16.8.0 <=18",
+		"react-dom": ">=16.8.0 <=18",
+		"styled-components": ">= 4.0.3"
 	}
 }

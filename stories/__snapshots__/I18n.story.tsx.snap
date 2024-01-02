@@ -1,0 +1,782 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`I18n CustomTexts smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Sorted Lane
+            </span>
+            <span class="sc-dAlyuH iHiWje">
+              <span>
+                20/70
+              </span>
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card1"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="title"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Buy milk
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-12-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="description"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                    >
+                      2 Gallons of milk at the Deli store
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card2"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="title"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Dispose Garbage
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-11-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="description"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                    >
+                      Sort out recyclable and waste as needed
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card3"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="title"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Write Blog
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-10-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="description"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                    >
+                      Can AI make memes?
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card4"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="title"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Pay Rent
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-09-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="description"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                    >
+                      Transfer to bank account
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <a class="sc-gFqAkR ecfzPu">
+              Click to add card
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="smooth-dnd-container horizontal">
+    <section class="sc-dAbbOL sc-feUZmu kUHSgc bMulzd">
+      <button class="sc-fhzFiK duRxJO">
+        NEW LANE
+      </button>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`I18n FlatTranslationTable smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Sorted Lane
+            </span>
+            <span class="sc-dAlyuH iHiWje">
+              <span>
+                20/70
+              </span>
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card1"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="Titel"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Buy milk
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="Label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-12-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="Beschreibung"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                    >
+                      2 Gallons of milk at the Deli store
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card2"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="Titel"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Dispose Garbage
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="Label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-11-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="Beschreibung"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                    >
+                      Sort out recyclable and waste as needed
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card3"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="Titel"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Write Blog
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="Label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-10-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="Beschreibung"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                    >
+                      Can AI make memes?
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card4"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      <textarea placeholder="Titel"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Pay Rent
+                      </textarea>
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                      <textarea placeholder="Label"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2017-09-01
+                      </textarea>
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    <textarea placeholder="Beschreibung"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              spellcheck="false"
+                              rows="1"
+                              class="sc-fHjqPf bsHyvp"
+                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                    >
+                      Transfer to bank account
+                    </textarea>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <a class="sc-gFqAkR ecfzPu">
+              Klicken zum Erstellen einer Karte
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="smooth-dnd-container horizontal">
+    <section class="sc-dAbbOL sc-feUZmu kUHSgc bMulzd">
+      <button class="sc-fhzFiK duRxJO">
+        + Weitere Liste erstellen
+      </button>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`I18n UsingI18next smoke-test 1`] = `
+<div>
+  <div>
+    <button>
+      English
+    </button>
+    <button>
+      Русский
+    </button>
+  </div>
+  <div draggable="false"
+       class="sc-iGgWBj iSNfA"
+  >
+    <div>
+      <div class="smooth-dnd-container horizontal">
+        <div class="smooth-dnd-draggable-wrapper">
+          <section draggable="false"
+                   class="sc-kAyceB dgWEjS react-trello-lane"
+          >
+            <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+              <span class="sc-kpDqfm gDkBAH">
+                Sorted Lane
+              </span>
+              <span class="sc-dAlyuH iHiWje">
+                <span>
+                  20/70
+                </span>
+              </span>
+            </header>
+            <div class="sc-dhKdcB ikKiDc">
+              <div class="smooth-dnd-container vertical">
+                <div class="smooth-dnd-draggable-wrapper">
+                  <article data-id="Card1"
+                           class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                  >
+                    <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                      <span draggable="true"
+                            class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                      >
+                        <textarea placeholder="title"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                        >
+                          Buy milk
+                        </textarea>
+                      </span>
+                      <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                        <textarea placeholder="label"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                        >
+                          2017-12-01
+                        </textarea>
+                      </span>
+                      <div class="sc-hmdomO gJuJJJ">
+                        <button class="sc-jsJBEP djrAfI">
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div class="sc-eDPEul cRhiim">
+                      <textarea placeholder="description"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        2 Gallons of milk at the Deli store
+                      </textarea>
+                    </div>
+                  </article>
+                </div>
+                <div class="smooth-dnd-draggable-wrapper">
+                  <article data-id="Card2"
+                           class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                  >
+                    <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                      <span draggable="true"
+                            class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                      >
+                        <textarea placeholder="title"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                        >
+                          Dispose Garbage
+                        </textarea>
+                      </span>
+                      <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                        <textarea placeholder="label"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                        >
+                          2017-11-01
+                        </textarea>
+                      </span>
+                      <div class="sc-hmdomO gJuJJJ">
+                        <button class="sc-jsJBEP djrAfI">
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div class="sc-eDPEul cRhiim">
+                      <textarea placeholder="description"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                      >
+                        Sort out recyclable and waste as needed
+                      </textarea>
+                    </div>
+                  </article>
+                </div>
+                <div class="smooth-dnd-draggable-wrapper">
+                  <article data-id="Card3"
+                           class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                  >
+                    <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                      <span draggable="true"
+                            class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                      >
+                        <textarea placeholder="title"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                        >
+                          Write Blog
+                        </textarea>
+                      </span>
+                      <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                        <textarea placeholder="label"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                        >
+                          2017-10-01
+                        </textarea>
+                      </span>
+                      <div class="sc-hmdomO gJuJJJ">
+                        <button class="sc-jsJBEP djrAfI">
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div class="sc-eDPEul cRhiim">
+                      <textarea placeholder="description"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Can AI make memes?
+                      </textarea>
+                    </div>
+                  </article>
+                </div>
+                <div class="smooth-dnd-draggable-wrapper">
+                  <article data-id="Card4"
+                           class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                  >
+                    <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                      <span draggable="true"
+                            class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                      >
+                        <textarea placeholder="title"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                        >
+                          Pay Rent
+                        </textarea>
+                      </span>
+                      <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                        <textarea placeholder="label"
+                                  autocomplete="off"
+                                  autocorrect="off"
+                                  autocapitalize="off"
+                                  spellcheck="false"
+                                  rows="1"
+                                  class="sc-fHjqPf bsHyvp"
+                                  style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                        >
+                          2017-09-01
+                        </textarea>
+                      </span>
+                      <div class="sc-hmdomO gJuJJJ">
+                        <button class="sc-jsJBEP djrAfI">
+                          ✖
+                        </button>
+                      </div>
+                    </header>
+                    <div class="sc-eDPEul cRhiim">
+                      <textarea placeholder="description"
+                                autocomplete="off"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                spellcheck="false"
+                                rows="1"
+                                class="sc-fHjqPf bsHyvp"
+                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                      >
+                        Transfer to bank account
+                      </textarea>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <a class="sc-gFqAkR ecfzPu">
+                Click to add card
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="smooth-dnd-container horizontal">
+      <section class="sc-dAbbOL sc-feUZmu kUHSgc bMulzd">
+        <button class="sc-fhzFiK duRxJO">
+          + Add another lane
+        </button>
+      </section>
+    </div>
+  </div>
+</div>
+`;

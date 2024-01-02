@@ -1,0 +1,87 @@
+name: Release - Canary
+
+on:
+  pull_request:
+    types: [labeled]
+    branches:
+      - main
+jobs:
+  release:
+    if: contains(github.event.pull_request.labels.*.name, 'release canary')
+    name: Build & Publish a canary release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false  
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Check packages for common errors
+        run: pnpm build
+
+      - name: Bump version to canary
+        run: node .github/canary-version.mjs
+
+      - name: Authenticate to npm and publish
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+          pnpm publish --access public --tag canary --no-git-checks
+
+      - name: Create a new comment notifying of the new canary version
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            // Get package version
+            const fs = require("fs");
+            let text = 'A new canary is available for testing. You can install this latest build in your project with:\n\n```sh\n'
+
+            const packageJson = JSON.parse(fs.readFileSync("package.json"));
+            const version = packageJson.version;
+            text += `pnpm add react-trello-ts@${version}`
+            text += '\n```\n\n'
+            text += `Current bundle size (minified + gzipped): ![NPM Bundle MIN Size](https://img.shields.io/bundlephobia/minzip/react-trello-ts.svg)\n\n`
+            text += `New bundle size (minified + gzipped): ![NPM Bundle MIN Size](https://img.shields.io/bundlephobia/minzip/react-trello-ts@${version})\n\n`
+
+            // Create a comment on the PR with the new canary version
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: text,
+            })
+
+            // Remove the label
+            github.rest.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              name: 'release canary',
+            });

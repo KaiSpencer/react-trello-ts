@@ -17,7 +17,7 @@ jobs:
         - name: Install Node.js
           uses: actions/setup-node@v3
           with:
-            node-version: 16
+            node-version: 18
 
         - uses: pnpm/action-setup@v2
           name: Install pnpm
@@ -26,12 +26,6 @@ jobs:
             version: 8
             run_install: false
         
-        - name: Cypress install
-          uses: cypress-io/github-action@v6
-          with:
-            # Disable running of tests within install job
-            runTests: false
-
         - name: Get pnpm store directory
           id: pnpm-cache
           shell: bash
@@ -48,9 +42,12 @@ jobs:
 
         - name: Install dependencies
           run: pnpm install
+        
+        - name: Playwright Browsers
+          run: pnpm exec playwright install
 
         - name: Lint
           run: pnpm lint
 
         - name: Unit Test
-          run: pnpm test:unit
+          run: pnpm test

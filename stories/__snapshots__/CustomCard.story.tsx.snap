@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Components Card smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+                 style="background-color: cyan; padding: 20px;"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH"
+                  style="font-size: 20px; margin-bottom: 15px;"
+            >
+              Planned Tasks
+            </span>
+            <span class="sc-dAlyuH iHiWje">
+              <span style="color: rgb(0, 150, 136); font-weight: bold;">
+                12/12
+              </span>
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                         style="border-radius: 6px; box-shadow: rgb(189, 59, 54) 0px 0px 6px 1px; margin-bottom: 15px;"
+                >
+                  <header style="border-bottom: 1px solid rgb(238, 238, 238); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(189, 59, 54);">
+                    <div style="font-size: 14px; font-weight: bold;">
+                      John Smith
+                    </div>
+                    <div style="font-size: 11px;">
+                      due in a day
+                    </div>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div style="font-size: 12px; color: rgb(189, 59, 54);">
+                    <div style="color: rgb(76, 76, 76); font-weight: bold;">
+                      SMS received at 12:13pm today
+                    </div>
+                    <div style="padding: 5px 0px;">
+                      <i>
+                        Thanks. Please schedule me for an estimate on Monday.
+                      </i>
+                    </div>
+                    <div style="margin-top: 10px; text-align: center; color: rgb(189, 59, 54); font-size: 15px; font-weight: bold;">
+                      Escalated to OPS-ESCALATIONS!
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                         style="border-radius: 6px; box-shadow: rgb(224, 133, 33) 0px 0px 6px 1px; margin-bottom: 15px;"
+                >
+                  <header style="border-bottom: 1px solid rgb(238, 238, 238); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(224, 133, 33);">
+                    <div style="font-size: 14px; font-weight: bold;">
+                      Card Weathers
+                    </div>
+                    <div style="font-size: 11px;">
+                      due now
+                    </div>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div style="font-size: 12px; color: rgb(189, 59, 54);">
+                    <div style="color: rgb(76, 76, 76); font-weight: bold;">
+                      Email received at 1:14pm
+                    </div>
+                    <div style="padding: 5px 0px;">
+                      <i>
+                        Is the estimate free, and can someone call me soon?
+                      </i>
+                    </div>
+                    <div style="margin-top: 10px; text-align: center; color: rgb(224, 133, 33); font-size: 15px; font-weight: bold;">
+                      Escalated to Admin
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Long Lane name this is i suppose ha!
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                         style="border-radius: 6px; box-shadow: rgb(189, 59, 54) 0px 0px 6px 1px; margin-bottom: 15px;"
+                >
+                  <header style="border-bottom: 1px solid rgb(238, 238, 238); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between; color: rgb(189, 59, 54);">
+                    <div style="font-size: 14px; font-weight: bold;">
+                      Michael Caine
+                    </div>
+                    <div style="font-size: 11px;">
+                      due in a day
+                    </div>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div style="font-size: 12px; color: rgb(189, 59, 54);">
+                    <div style="color: rgb(76, 76, 76); font-weight: bold;">
+                      Email received at 4:23pm today
+                    </div>
+                    <div style="padding: 5px 0px;">
+                      <i>
+                        You are welcome. Interested in doing business with you again
+                      </i>
+                    </div>
+                    <div style="margin-top: 10px; text-align: center; color: rgb(189, 59, 54); font-size: 15px; font-weight: bold;">
+                      Escalated to OPS-ESCALATIONS!
+                    </div>
+                    <div style="border-top: 1px solid rgb(238, 238, 238); padding-top: 6px; display: flex; justify-content: flex-end; flex-flow: wrap;">
+                      <span class="sc-fPXMVe eCIUDc"
+                            style="color: white; background-color: red; font-size: 80%;"
+                      >
+                        Critical
+                      </span>
+                      <span class="sc-fPXMVe eCIUDc"
+                            style="color: white; background-color: rgb(0, 121, 191); font-size: 80%;"
+                      >
+                        2d ETA
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
