@@ -3,6 +3,7 @@
 	"version": "2.0.16",
 	"description": "Pluggable typesafe components to add a trello like kanban board to your application",
 	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
 	"exports": {
 		".": {
 			"require": "./dist/index.js",
@@ -67,7 +68,7 @@
 		"storybook": "7.6.7",
 		"styled-components": "^5.3.9",
 		"tsup": "^8.0.1",
-		"playwright":"^1.40.1",
+		"playwright": "^1.40.1",
 		"typescript": "^5.3.3"
 	},
 	"peerDependencies": {
