@@ -47,7 +47,7 @@ jobs:
         run: pnpm build
 
       - name: Bump version to canary
-        run: node .github/canary-version.js
+        run: node .github/canary-version.mjs
 
       - name: Authenticate to npm and publish
         run: |
