@@ -1,0 +1,149 @@
+import React, { CSSProperties, FC, PropsWithChildren } from "react";
+import { StyledComponent } from "styled-components";
+import { createTranslate } from "..";
+import {
+	CardHeader,
+	CardRightContent,
+	CardTitle,
+	Detail,
+	Footer,
+	MovableCardWrapper,
+} from "../styles/Base";
+import { Card as ICard } from "../types/Board";
+import { InlineInput } from "../widgets";
+import { DeleteButton } from "../widgets";
+import { Tag, TagProps } from "./Card/Tag";
+
+/**
+ * Card component type
+ *
+ * Pass in a type to the optional generic to add custom properties to the card
+ *
+ * @example
+ *
+ * type CustomCardProps = {
+ * 	dueOn: string;
+ * }
+ *
+ * const CustomCard: CardComponent<CustomCardProps> = ({ dueOn, ...props }) => {
+ * 	return (
+ * 		<Card {...props}>
+ * 			<Detail>{dueOn}</Detail>
+ * 		</Card>
+ * 	)
+ * }
+ */
+export type CardComponent<TCustomCardProps extends {} = object> = FC<
+	PropsWithChildren<CardProps & TCustomCardProps>
+>;
+
+export type CardProps = {
+	showDeleteButton?: boolean;
+	onDelete?: () => void;
+	onClick?: (e) => void;
+	onChange?: (card: ICard) => void;
+	style?: CSSProperties;
+	tagStyle?: CSSProperties;
+	className?: string;
+	id: string;
+	index: number;
+	title?: string;
+	label?: string;
+	description?: string;
+	tags?: TagProps[];
+	cardDraggable?: boolean;
+	editable?: boolean;
+	metadata?: Record<string, any>;
+	t: typeof createTranslate;
+};
+
+export const Card: CardComponent = ({
+	onDelete,
+	onChange,
+	id,
+	onClick,
+	style,
+	className,
+	description,
+	label,
+	t,
+	tags,
+	title,
+	cardDraggable,
+	editable,
+	showDeleteButton,
+	tagStyle,
+}) => {
+	const _onDelete = (
+		e:
+			| React.MouseEvent<HTMLDivElement>
+			| React.MouseEvent<StyledComponent<"div", any>>,
+	) => {
+		onDelete();
+		e.stopPropagation();
+	};
+	const updateCard = (card: Partial<ICard>) => {
+		onChange({ ...card, id });
+	};
+
+	return (
+		<MovableCardWrapper
+			data-id={id}
+			onClick={onClick}
+			style={style}
+			className={className}
+		>
+			<CardHeader>
+				<CardTitle draggable={cardDraggable}>
+					{editable ? (
+						<InlineInput
+							value={title}
+							border={true}
+							placeholder={t("placeholder.title") as unknown as string}
+							resize="vertical"
+							onSave={(value: ICard["title"]) => updateCard({ title: value })}
+						/>
+					) : (
+						title
+					)}
+				</CardTitle>
+				<CardRightContent>
+					{editable ? (
+						<InlineInput
+							value={label}
+							border={true}
+							placeholder={t("placeholder.label") as unknown as string}
+							resize="vertical"
+							onSave={(value: ICard["label"]) => updateCard({ label: value })}
+						/>
+					) : (
+						label
+					)}
+				</CardRightContent>
+				{showDeleteButton && <DeleteButton onClick={_onDelete} />}
+			</CardHeader>
+			<Detail>
+				{editable ? (
+					<InlineInput
+						value={description}
+						border={true}
+						placeholder={t("placeholder.description") as unknown as string}
+						resize="vertical"
+						onSave={(value: ICard["description"]) =>
+							updateCard({ description: value })
+						}
+					/>
+				) : (
+					description
+				)}
+			</Detail>
+			{tags && tags.length > 0 && (
+				<Footer>
+					{tags.map((tag) => (
+						<Tag key={tag.title} {...tag} tagStyle={tagStyle} />
+					))}
+				</Footer>
+			)}
+		</MovableCardWrapper>
+	);
+};

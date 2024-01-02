@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Advanced Features ScrollingAndEvents smoke-test 1`] = `
+<div>
+  <button style="margin: 5px;">
+    Add Card
+  </button>
+  <button style="margin: 5px;">
+    Refresh Board
+  </button>
+  <div draggable="false"
+       class="sc-iGgWBj iSNfA"
+  >
+    <div>
+      <div class="smooth-dnd-container horizontal">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Lane1
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="1"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card1
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #1
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="2"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card2
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #2
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="3"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card3
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #3
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="4"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card4
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #4
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="5"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card5
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #5
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="6"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card6
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #6
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="7"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card7
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #7
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="8"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card8
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #8
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="9"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card9
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #9
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="10"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card10
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #10
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="11"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card11
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #11
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="12"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card12
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #12
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="13"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card13
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #13
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="14"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card14
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #14
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="15"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card15
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    Description for #15
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;

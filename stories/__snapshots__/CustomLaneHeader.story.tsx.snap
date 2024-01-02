@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Components LaneHeader smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <section target="100"
+               draggable="false"
+               class="sc-kAyceB dgWEjS react-trello-lane"
+      >
+        <div>
+          <header style="border-bottom: 2px solid rgb(197, 197, 197); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="font-size: 14px; font-weight: bold;">
+              Planned Tasks
+            </div>
+            <div style="width: 30%; text-align: right; font-size: 13px;">
+              <button type="submit"
+                      style="cursor: pointer;"
+              >
+                ?
+              </button>
+            </div>
+          </header>
+          <div>
+            Percentage: 0/
+          </div>
+        </div>
+        <div class="sc-dhKdcB ikKiDc">
+          <div class="smooth-dnd-container vertical">
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card1"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    John Smith
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Thanks. Please schedule me for an estimate on Monday.
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card2"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Card Weathers
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Email received at 1:14pm
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section target="100"
+               draggable="false"
+               class="sc-kAyceB dgWEjS react-trello-lane"
+      >
+        <div>
+          <header style="border-bottom: 2px solid rgb(197, 197, 197); padding-bottom: 6px; margin-bottom: 10px; display: flex; flex-direction: row; justify-content: space-between;">
+            <div style="font-size: 14px; font-weight: bold;">
+              Completed Tasks
+            </div>
+            <div style="width: 30%; text-align: right; font-size: 13px;">
+              <button type="submit"
+                      style="cursor: pointer;"
+              >
+                ?
+              </button>
+            </div>
+          </header>
+          <div>
+            Percentage: 0/
+          </div>
+        </div>
+        <div class="sc-dhKdcB ikKiDc">
+          <div class="smooth-dnd-container vertical">
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card3"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Michael Caine
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  You are welcome. Interested in doing business with you again
+                </div>
+                <div class="sc-eldPxv iDFVov">
+                  <span class="sc-fPXMVe eCIUDc"
+                        style="color: white; background-color: red;"
+                  >
+                    Critical
+                  </span>
+                  <span class="sc-fPXMVe eCIUDc"
+                        style="color: white; background-color: rgb(0, 121, 191);"
+                  >
+                    2d ETA
+                  </span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;

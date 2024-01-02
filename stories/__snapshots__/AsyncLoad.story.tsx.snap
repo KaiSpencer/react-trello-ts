@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Advanced Features AsyncLoad smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <section draggable="false"
+               class="sc-kAyceB dgWEjS react-trello-lane"
+      >
+        <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+          <span class="sc-kpDqfm gDkBAH">
+            loading..
+          </span>
+        </header>
+        <div class="sc-dhKdcB ikKiDc">
+          <div class="smooth-dnd-container vertical">
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Basic Functions ReverseSortedLane smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <section draggable="false"
+               class="sc-kAyceB dgWEjS react-trello-lane"
+      >
+        <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+          <span class="sc-kpDqfm gDkBAH">
+            Sorted Lane
+          </span>
+          <span class="sc-dAlyuH iHiWje">
+            <span>
+              20/70
+            </span>
+          </span>
+        </header>
+        <div class="sc-dhKdcB ikKiDc">
+          <div class="smooth-dnd-container vertical">
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card1"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Buy milk
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-12-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  2 Gallons of milk at the Deli store
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card2"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Dispose Garbage
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-11-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Sort out recyclable and waste as needed
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card3"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Write Blog
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-10-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Can AI make memes?
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card4"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Pay Rent
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-09-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Transfer to bank account
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Basic Functions SortedLane smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <section draggable="false"
+               class="sc-kAyceB dgWEjS react-trello-lane"
+      >
+        <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+          <span class="sc-kpDqfm gDkBAH">
+            Sorted Lane
+          </span>
+          <span class="sc-dAlyuH iHiWje">
+            <span>
+              20/70
+            </span>
+          </span>
+        </header>
+        <div class="sc-dhKdcB ikKiDc">
+          <div class="smooth-dnd-container vertical">
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card4"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Pay Rent
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-09-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Transfer to bank account
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card3"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Write Blog
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-10-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Can AI make memes?
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card2"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Dispose Garbage
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-11-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  Sort out recyclable and waste as needed
+                </div>
+              </article>
+            </div>
+            <div class="smooth-dnd-draggable-wrapper">
+              <article data-id="Card1"
+                       class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+              >
+                <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                  <span draggable="true"
+                        class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                  >
+                    Buy milk
+                  </span>
+                  <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    2017-12-01
+                  </span>
+                  <div class="sc-hmdomO gJuJJJ">
+                    <button class="sc-jsJBEP djrAfI">
+                      ✖
+                    </button>
+                  </div>
+                </header>
+                <div class="sc-eDPEul cRhiim">
+                  2 Gallons of milk at the Deli store
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;

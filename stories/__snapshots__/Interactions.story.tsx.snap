@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Advanced Features EventHandling smoke-test 1`] = `
+<div draggable="false"
+     class="sc-iGgWBj iSNfA"
+>
+  <div>
+    <div class="smooth-dnd-container horizontal">
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Planned Tasks
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card1"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card1
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    foo card
+                  </div>
+                </article>
+              </div>
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card2"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card2
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    bar card
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="smooth-dnd-draggable-wrapper">
+        <section draggable="false"
+                 class="sc-kAyceB dgWEjS react-trello-lane"
+        >
+          <header class="sc-gsFSXq sc-imWYAI imRIDz gLxuAH">
+            <span class="sc-kpDqfm gDkBAH">
+              Executing
+            </span>
+          </header>
+          <div class="sc-dhKdcB ikKiDc">
+            <div class="smooth-dnd-container vertical">
+              <div class="smooth-dnd-draggable-wrapper">
+                <article data-id="Card3"
+                         class="sc-jlZhew sc-cwHptR clGdKf fQNcVl react-trello-card"
+                >
+                  <header class="sc-gsFSXq sc-jEACwC imRIDz jNaWkr">
+                    <span draggable="true"
+                          class="sc-kpDqfm sc-cPiKLX cFicSq cnDDQK"
+                    >
+                      Card3
+                    </span>
+                    <span class="sc-dAlyuH sc-dLMFU iHiWje dvkFIZ">
+                    </span>
+                    <div class="sc-hmdomO gJuJJJ">
+                      <button class="sc-jsJBEP djrAfI">
+                        ✖
+                      </button>
+                    </div>
+                  </header>
+                  <div class="sc-eDPEul cRhiim">
+                    foobar card
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
