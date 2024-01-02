@@ -53,8 +53,6 @@
 		"@storybook/react": "7.6.7",
 		"@storybook/react-vite": "^7.6.7",
 		"@storybook/test-runner": "^0.16.0",
-		"@testing-library/react": "^12",
-		"@types/jest": "^27",
 		"@types/node": "^18.7.14",
 		"@types/react": "^16",
 		"@types/react-dom": "^16",
@@ -62,15 +60,9 @@
 		"@types/uuid": "^8.3.4",
 		"gh-pages": "^4.0.0",
 		"i18next": "^17.0.3",
-		"identity-obj-proxy": "^3.0.0",
-		"jest": "^27",
-		"jest-cli": "^27",
-		"jest-styled-components": "^7.2.0",
-		"playwright": "^1.40.1",
-		"react": "^16",
-		"react-dom": "^16",
+		"react": "^18",
+		"react-dom": "^18",
 		"react-i18next": "^10.11.0",
-		"react-is": ">= 16.8.0",
 		"start-server-and-test": "^2.0.3",
 		"storybook": "7.6.7",
 		"styled-components": "^5.3.9",
@@ -78,8 +70,8 @@
 		"typescript": "^5.3.3"
 	},
 	"peerDependencies": {
-		"react": "*",
-		"react-dom": "*",
+		"react": "^16.8.0<=^18",
+		"react-dom": "^16.8.0<=^18",
 		"styled-components": ">= 4.0.3"
 	}
 }
