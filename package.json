@@ -23,7 +23,8 @@
 		"deploy-storybook": "pnpm storybook build && gh-pages -d storybook-build",
 		"build-storybook": "storybook build -o storybook-build",
 		"lint": "pnpm biome check .",
-		"release": "pnpm build && pnpm changeset publish"
+		"release": "pnpm build && pnpm changeset publish",
+		"changeset": "changeset"
 	},
 	"repository": {
 		"type": "git",
@@ -69,7 +70,8 @@
 		"storybook": "7.6.7",
 		"styled-components": "^5.3.9",
 		"tsup": "^8.0.1",
-		"typescript": "^5.3.3"
+		"typescript": "^5.3.3",
+		"@changesets/cli": "^2.27.1"
 	},
 	"peerDependencies": {
 		"react": ">=16.8.0 <=18",
