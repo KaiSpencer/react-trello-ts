@@ -52,7 +52,7 @@ jobs:
       - name: Authenticate to npm and publish
         run: |
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
-          pnpm publish react-trello-ts --access public --tag canary --no-git-checks
+          pnpm publish --access public --tag canary --no-git-checks
 
       - name: Create a new comment notifying of the new canary version
         uses: actions/github-script@v6
