@@ -10,10 +10,7 @@
 			"import": "./dist/index.mjs"
 		}
 	},
-	"files": [
-		"dist",
-		"README"
-	],
+	"files": ["dist", "README"],
 	"scripts": {
 		"prepublish": "pnpm build",
 		"storybook": "storybook dev -p 6006",
@@ -23,7 +20,6 @@
 		"dev": "tsup --watch",
 		"build": "tsup",
 		"docs": "storybook build -o docs",
-		"deploy-storybook": "pnpm storybook build && gh-pages -d storybook-build",
 		"build-storybook": "storybook build -o storybook-build",
 		"lint": "pnpm biome check .",
 		"release": "pnpm build && pnpm changeset publish",
@@ -33,12 +29,7 @@
 		"type": "git",
 		"url": "https://github.com/KaiSpencer/react-trello-ts"
 	},
-	"keywords": [
-		"react",
-		"trello",
-		"board",
-		"typescript"
-	],
+	"keywords": ["react", "trello", "board", "typescript"],
 	"author": "Kai Spencer",
 	"license": "MIT",
 	"bugs": {
@@ -68,7 +59,6 @@
 		"@types/react-dom": "^16",
 		"@types/styled-components": "^5.1.26",
 		"@types/uuid": "^8.3.4",
-		"gh-pages": "^4.0.0",
 		"i18next": "^17.0.3",
 		"playwright": "^1.40.1",
 		"react": "^18",
