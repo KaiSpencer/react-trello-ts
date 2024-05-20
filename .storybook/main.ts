@@ -1,12 +1,15 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 
 export default ({
-	addons: ["@storybook/addon-essentials"],
-	framework: "@storybook/react-vite",
-	stories: ["../stories/**/*.story.@(js|tsx|mdx)"],
-
-	core: {
-		builder: "@storybook/builder-vite",
+	addons: ["@storybook/addon-essentials", "@chromatic-com/storybook"],
+	framework: {
+		name: "@storybook/react-vite",
+		options: {},
 	},
-	docs: { autodocs: true },
+	stories: ["../stories/**/*.story.@(js|tsx|mdx)"],
+	core: {},
+	docs: {},
+	typescript: {
+		reactDocgen: "react-docgen-typescript",
+	},
 } satisfies StorybookConfig);
