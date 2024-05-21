@@ -46,11 +46,14 @@ jobs:
         - name: Playwright Browsers
           run: pnpm exec playwright install
 
-        - name: Check library config
-          run: pnpm attw --pack .
-
         - name: Lint
           run: pnpm lint
+
+        - name: Build
+          run: pnpm build
+
+        - name: Check library config
+          run: pnpm attw --pack .
 
         - name: Unit Test
           run: pnpm test
