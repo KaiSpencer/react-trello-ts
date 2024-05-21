@@ -5,6 +5,7 @@ on: pull_request
 jobs:
   check_library_config:
     runs-on: ubuntu-latest
+    name: Check configuration
 
     steps:
       - name: Checkout
@@ -38,6 +39,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Build
+        run: pnpm build
 
       - name: Check library config
         run: pnpm attw --pack .
