@@ -2,7 +2,7 @@
 	"compilerOptions": {
     "target": "ES2022",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "jsx": "react",                                /* Specify what JSX code is generated. */
-	"moduleResolution": "Bundler",
+	"moduleResolution": "Node",
 	"declaration": true,                            /* Specify what module code is generated. */
     "baseUrl": ".",/* Specify the base directory to resolve non-relative module names. */
     "paths": {"rt/*":["./src/*"], "@/*": ["./src/*"]},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
