@@ -5,6 +5,8 @@ on: pull_request
 jobs:
   check_library_config:
     runs-on: ubuntu-latest
+
+    steps:
       - name: Checkout
         uses: actions/checkout@v3
 
