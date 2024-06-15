@@ -4,7 +4,6 @@
   "description": "Pluggable typesafe components to add a trello like kanban board to your application",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     }
   },
