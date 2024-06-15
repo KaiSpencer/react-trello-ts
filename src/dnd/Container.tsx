@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 // import container, { dropHandlers } from "trello-smooth-dnd";
 import * as tsd from "trello-smooth-dnd";
 
+console.log("TSD", tsd);
+
 const container = tsd.default || tsd;
 const dropHandlers = tsd.dropHandlers || tsd;
 
