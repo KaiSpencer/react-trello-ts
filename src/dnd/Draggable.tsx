@@ -1,5 +1,5 @@
 import React, { Component, ReactElement } from "react";
-import { constants } from "trello-smooth-dnd";
+const constants = require("trello-smooth-dnd").constants;
 const { wrapperClass } = constants;
 
 export class Draggable extends Component<{
