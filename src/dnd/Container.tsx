@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import container, { dropHandlers } from "trello-smooth-dnd";
+// import container, { dropHandlers } from "trello-smooth-dnd";
+import * as tsd from "trello-smooth-dnd";
+
+const container = tsd.default || tsd;
+const dropHandlers = tsd.dropHandlers || tsd;
 
 container.dropHandler = dropHandlers.reactDropHandler().handler;
 container.wrapChild = (p: any) => p; // dont wrap children they will already be wrapped
