@@ -2,11 +2,6 @@
   "name": "react-trello-ts",
   "version": "2.1.0",
   "description": "Pluggable typesafe components to add a trello like kanban board to your application",
-  "exports": {
-    ".": {
-      "require": "./dist/index.cjs"
-    }
-  },
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
   "files": [
