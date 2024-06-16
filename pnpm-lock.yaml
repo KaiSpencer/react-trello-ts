@@ -20,9 +20,9 @@ dependencies:
   react-popopo:
     specifier: ^2.1.9
     version: 2.1.9(classnames@2.5.1)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
-  trello-smooth-dnd:
-    specifier: 1.0.0
-    version: 1.0.0
+  react-trello-ts-smooth-dnd:
+    specifier: ^0.0.1
+    version: 0.0.1
   uuid:
     specifier: ^9.0.1
     version: 9.0.1
@@ -10436,6 +10436,10 @@ packages:
       tslib: 2.6.2
     dev: true
 
+  /react-trello-ts-smooth-dnd@0.0.1:
+    resolution: {integrity: sha512-myUYlcD/g2n+TMwofQiu0SifpHdD1HNnYu61/zbwyMcsrsa9pZ/ltDwo1j3U49c60Oa6tjLymElgMmP8DfxzWA==}
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -11516,10 +11520,6 @@ packages:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
     dev: true
-
-  /trello-smooth-dnd@1.0.0:
-    resolution: {integrity: sha512-KgYEwmxX08Dl4OmioEv24LSnlNp9jNv8lwTQlUMbMm6B+VuwyQuuuoyu4wlsRweiMCCC6sZXpCCGkmAni/vCaQ==}
-    dev: false
 
   /trim-newlines@3.0.1:
     resolution: {integrity: sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==}

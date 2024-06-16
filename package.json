@@ -3,6 +3,12 @@
   "version": "2.1.0",
   "description": "Pluggable typesafe components to add a trello like kanban board to your application",
   "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
@@ -43,7 +49,7 @@
     "classnames": "^2.5.1",
     "immer": "^9.0.21",
     "react-popopo": "^2.1.9",
-    "trello-smooth-dnd": "1.0.0",
+    "react-trello-ts-smooth-dnd": "^0.0.1",
     "uuid": "^9.0.1",
     "zustand": "^4.4.7"
   },

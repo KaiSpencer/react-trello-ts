@@ -1,8 +1,5 @@
 import React, { Component, ReactElement } from "react";
-// import { constants } from "trello-smooth-dnd";
-import * as tsd from "trello-smooth-dnd";
-
-const constants = tsd.default || tsd;
+import { constants } from "react-trello-ts-smooth-dnd";
 
 const { wrapperClass } = constants;
 
