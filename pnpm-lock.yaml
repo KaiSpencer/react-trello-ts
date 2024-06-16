@@ -21,8 +21,8 @@ dependencies:
     specifier: ^2.1.9
     version: 2.1.9(classnames@2.5.1)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
   react-trello-ts-smooth-dnd:
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.0.3
+    version: 0.0.3
   uuid:
     specifier: ^9.0.1
     version: 9.0.1
@@ -10436,8 +10436,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /react-trello-ts-smooth-dnd@0.0.2:
-    resolution: {integrity: sha512-aKeJ7YejQJ/K38855hWmnTElZOL7EL1OUtVNcuPmfOUGsv7rVL+0YdgfvnAPSHMQbC8GtEr1JHXqg8XMKz9lmA==}
+  /react-trello-ts-smooth-dnd@0.0.3:
+    resolution: {integrity: sha512-LpcHLfMyEi1OI1Q3o0DGHqs4NcekPg8H4ZHiFxSxQqqkerIMsAmQPW6FxiMw4nbbr+RiJiA2LVn4LFkX4jEcvg==}
     dev: false
 
   /react@18.2.0:
