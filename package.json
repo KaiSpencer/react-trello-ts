@@ -2,17 +2,17 @@
   "name": "react-trello-ts",
   "version": "2.1.0",
   "description": "Pluggable typesafe components to add a trello like kanban board to your application",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "README"  
+    "README"
   ],
   "scripts": {
     "prepublish": "pnpm build",
@@ -20,8 +20,7 @@
     "storybook:no-open": "pnpm storybook --no-open",
     "test": "start-server-and-test storybook:no-open http://localhost:6006 test-storybook",
     "test-storybook": "test-storybook",
-    "dev": "tsup --watch",
-    "build": "tsup",
+    "build": "unbuild",
     "docs": "storybook build -o docs",
     "build-storybook": "storybook build -o storybook-build",
     "lint": "pnpm biome check .",
@@ -49,14 +48,16 @@
     "classnames": "^2.5.1",
     "immer": "^9.0.21",
     "react-popopo": "^2.1.9",
-    "trello-smooth-dnd": "1.0.0",
+    "react-trello-ts-smooth-dnd": "^0.0.3",
     "uuid": "^9.0.1",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.3",
     "@biomejs/biome": "1.4.1",
     "@changesets/cli": "^2.27.1",
     "@chromatic-com/storybook": "^1",
+    "@microsoft/api-extractor": "^7.43.7",
     "@storybook/addon-essentials": "^8.1.1",
     "@storybook/cli": "^8.1.1",
     "@storybook/core-events": "^8.1.1",
@@ -76,8 +77,8 @@
     "start-server-and-test": "^2.0.3",
     "storybook": "^8.1.1",
     "styled-components": "^5.3.11",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.5",
+    "unbuild": "^3.0.0-rc.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0 <=18",
