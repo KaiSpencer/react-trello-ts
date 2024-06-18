@@ -1,5 +1,11 @@
 # react-trello-ts
 
+## 2.1.1
+
+### Patch Changes
+
+- fcffa93: Update dependencies
+
 ## 2.1.0
 
 ### Minor Changes
