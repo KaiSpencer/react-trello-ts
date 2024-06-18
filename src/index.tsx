@@ -22,13 +22,11 @@ export { DefaultComponents as components };
 
 const DEFAULT_LANG = "en";
 
-export default ({
+function DefaultBoard({
 	components,
 	lang = DEFAULT_LANG,
 	...otherProps
-}: BoardContainerProps & {
-	lang?: keyof typeof locales;
-}) => {
+}: BoardContainerProps & { lang?: keyof typeof locales }) {
 	deprecationWarnings(otherProps);
 
 	const translate = createTranslate(locales[lang || "en"].translation);
@@ -39,4 +37,6 @@ export default ({
 			{...otherProps}
 		/>
 	);
-};
+}
+
+export default DefaultBoard;
