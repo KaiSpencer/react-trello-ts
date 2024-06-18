@@ -53,7 +53,7 @@ jobs:
           run: pnpm build
 
         - name: Check publish configuration
-          run: pnpm publint
+          run: pnpm publint --strict
 
         - name: Check library type configuration
           run: pnpm attw --pack .
