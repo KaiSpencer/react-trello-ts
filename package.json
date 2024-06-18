@@ -10,7 +10,10 @@
 		}
 	},
 	"types": "./dist/index.d.ts",
-	"files": ["dist", "README"],
+	"files": [
+		"dist",
+		"README"
+	],
 	"scripts": {
 		"prepublish": "pnpm build",
 		"storybook": "storybook dev -p 6006",
@@ -28,7 +31,12 @@
 		"type": "git",
 		"url": "https://github.com/KaiSpencer/react-trello-ts"
 	},
-	"keywords": ["react", "trello", "board", "typescript"],
+	"keywords": [
+		"react",
+		"trello",
+		"board",
+		"typescript"
+	],
 	"author": "Kai Spencer",
 	"license": "MIT",
 	"bugs": {
@@ -63,6 +71,7 @@
 		"@types/uuid": "^8.3.4",
 		"i18next": "^17.3.1",
 		"playwright": "^1.40.1",
+		"publint": "^0.2.8",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-i18next": "^10.13.2",
