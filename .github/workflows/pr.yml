@@ -1,4 +1,4 @@
-name: PR
+name: Checks
 
 on:
   pull_request:
@@ -6,7 +6,11 @@ on:
 
 jobs:
   lint:
-      name: Lint & Test
+      name: Node ${{ matrix.node-version }}
+      strategy:
+        fail-fast: false
+        matrix:
+          node-version: [18, 20, 22]
       timeout-minutes: 15
       runs-on: ubuntu-latest
 
@@ -17,7 +21,7 @@ jobs:
         - name: Install Node.js
           uses: actions/setup-node@v3
           with:
-            node-version: 18
+            node-version: ${{ matrix.node-version }}
 
         - uses: pnpm/action-setup@v2
           name: Install pnpm
