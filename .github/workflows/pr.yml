@@ -1,4 +1,4 @@
-name: PR
+name: Checks
 
 on:
   pull_request:
@@ -6,11 +6,11 @@ on:
 
 jobs:
   lint:
-      name: Lint & Test
+      name: Node ${{ matrix.node-version }}
       strategy:
         fail-fast: false
         matrix:
-          node-version: [16, 18, 20, 22]
+          node-version: [18, 20, 22]
       timeout-minutes: 15
       runs-on: ubuntu-latest
 
