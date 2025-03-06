@@ -1,5 +1,5 @@
-import autosize from "../helpers/autosize";
 import React, { FC, useEffect, useRef, useState } from "react";
+import autosize from "../helpers/autosize";
 import { InlineInput as _InlineInput } from "../styles/Base";
 
 interface InlineInputProps {

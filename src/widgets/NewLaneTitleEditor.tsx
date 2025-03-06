@@ -1,5 +1,5 @@
-import autosize from "../helpers/autosize";
 import React, { HTMLAttributes, PropsWithChildren, useState } from "react";
+import autosize from "../helpers/autosize";
 import { InlineInput } from "../styles/Base";
 
 interface NewLaneTitleEditorProps extends HTMLAttributes<HTMLTextAreaElement> {
