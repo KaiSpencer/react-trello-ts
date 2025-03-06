@@ -138,21 +138,21 @@ function assign(ta: HTMLTextAreaElement, options?: AutosizeOptions): void {
 		});
 	}
 
-	const handleInput = (()=> {
+	const handleInput = (() => {
 		let previousValue = ta.value;
 
 		return (): void => {
 			setHeight({
 				// if previousValue is '', check for height shrinkage because the placeholder may be taking up space instead
 				// if new value is merely appending to previous value, skip checking for height deduction
-				testForHeightReduction: previousValue === '' || !ta.value.startsWith(previousValue),
+				testForHeightReduction:
+					previousValue === "" || !ta.value.startsWith(previousValue),
 				restoreTextAlign: null,
 			});
 
 			previousValue = ta.value;
-		}
-	}()
-	)
+		};
+	})();
 
 	interface SavedStyles {
 		height: string;
