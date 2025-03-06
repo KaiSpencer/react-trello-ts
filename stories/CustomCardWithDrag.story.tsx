@@ -1,12 +1,11 @@
-import { Meta, storiesOf } from "@storybook/react";
+import { Meta } from "@storybook/react";
 import React from "react";
 
 import { MovableCardWrapper } from "../src/styles/Base";
 import debug from "./helpers/debug";
 
-import produce from "immer";
 import Board from "../src";
-import { BoardData, Card } from "../src/types/Board";
+import { BoardData } from "../src/types/Board";
 Board.displayName = "Board";
 
 const CustomCard = (props) => {
@@ -83,18 +82,38 @@ const BoardWithCustomCard = () => {
 	const [boardData, setBoardData] = React.useState<BoardData>(customCardData);
 	const onDragEnd = (cardId, sourceLandId, targetLaneId, index, card) => {
 		debug("Calling onDragEnd");
-		const updatedCard = produce<Card>(card, (draft) => {
-			draft.cardColor = "#d0fdd2";
-		});
-		const updatedBoard = produce<BoardData>(boardData, (draft) => {
-			const sourceLane = draft.lanes.find((lane) => lane.id === sourceLandId);
-			const targetLane = draft.lanes.find((lane) => lane.id === targetLaneId);
-			const cardIndex = sourceLane.cards.findIndex(
-				(card) => card.id === cardId,
-			);
-			sourceLane.cards.splice(cardIndex, 1);
-			targetLane.cards.splice(index, 0, updatedCard);
-		});
+		
+		// Create updated card without immer
+		const updatedCard = {
+			...card,
+			cardColor: "#d0fdd2"
+		};
+		
+		// Create updated board without immer
+		const updatedBoard = {
+			...boardData,
+			lanes: boardData.lanes.map(lane => {
+				// Source lane - remove the card
+				if (lane.id === sourceLandId) {
+					return {
+						...lane,
+						cards: lane.cards?.filter(c => c.id !== cardId) ?? []
+					};
+				}
+				// Target lane - add the card at the specified index
+				if (lane.id === targetLaneId) {
+					const newCards = [...(lane.cards ?? [])];
+					newCards.splice(index, 0, updatedCard);
+					return {
+						...lane,
+						cards: newCards
+					};
+				}
+				// Other lanes remain unchanged
+				return lane;
+			})
+		};
+		
 		setBoardData(updatedBoard);
 	};
 	return (

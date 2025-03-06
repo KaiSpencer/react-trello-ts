@@ -1,4 +1,4 @@
-import autosize from "autosize";
+import autosize from "../helpers/autosize";
 import React, { FC, useEffect, useRef, useState } from "react";
 import { InlineInput as _InlineInput } from "../styles/Base";
 

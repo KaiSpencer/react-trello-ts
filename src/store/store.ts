@@ -1,4 +1,3 @@
-import produce from "immer";
 import create from "zustand";
 import { BoardData, Card, Lane } from "../types/Board";
 
@@ -23,141 +22,159 @@ export interface State {
 	removeLane: (laneId: string) => void;
 	addLane: (lane: Lane) => void;
 }
-export const store = create<State>()((set) => ({
-	data: { lanes: [] },
-	initializeLanes: (lanes: Lane[]) =>
-		set((state) => ({
-			data: produce(state.data, (draft) => {
-				draft.lanes = lanes.map((lane) => {
-					return {
+export const store = create<State>()((set) => {
+	// Helper function to find a lane by ID and throw if not found
+	const findLaneIndex = (state: State, laneId: string, errorMessage = "Lane not found") => {
+		const laneIndex = state.data.lanes.findIndex((l) => l.id === laneId);
+		if (laneIndex === -1) {
+			throw new Error(errorMessage);
+		}
+		return laneIndex;
+	};
+
+	// Helper function to update a single lane
+	const updateLaneById = (state: State, laneId: string, updates: Partial<Lane>) => {
+		const laneIndex = findLaneIndex(state, laneId);
+		const updatedLanes = [...state.data.lanes];
+		updatedLanes[laneIndex] = { ...updatedLanes[laneIndex], ...updates };
+		
+		return { data: { ...state.data, lanes: updatedLanes } };
+	};
+
+	return {
+		data: { lanes: [] },
+		initializeLanes: (lanes: Lane[]) =>
+			set((state) => ({
+				data: {
+					...state.data,
+					lanes: lanes.map((lane) => ({
 						...lane,
 						currentPage: 1,
 						cards: lane.cards?.map((c) => ({ ...c, laneId: lane.id })),
-					};
-				});
+					})),
+				},
+			})),
+		refreshBoard: (lanes = []) => set(() => ({ data: { lanes } })),
+		addCard: (card, laneId, index) =>
+			set((state) => {
+				const laneIndex = findLaneIndex(state, laneId);
+				const lane = state.data.lanes[laneIndex];
+				
+				let updatedCards;
+				if (index === undefined) {
+					updatedCards = [...lane.cards, card];
+				} else {
+					updatedCards = [...lane.cards];
+					updatedCards[index] = card;
+				}
+				
+				return updateLaneById(state, laneId, { cards: updatedCards });
 			}),
-		})),
-	refreshBoard: (lanes = []) => set(() => ({ data: { lanes } })),
-	addCard: (card, laneId, index) =>
-		set(
-			produce<State>((state) => {
-				const lane = state.data.lanes.find((l) => l.id === laneId);
-				if (!lane) {
-					throw new Error("Lane not found");
-				}
-				if (index === undefined && lane.cards) {
-					lane.cards.push(card);
-					return;
-				}
-				lane.cards[index || 0] = card;
+		removeCard: (laneId, cardId) =>
+			set((state) => {
+				const laneIndex = findLaneIndex(state, laneId);
+				const lane = state.data.lanes[laneIndex];
+				const updatedCards = lane.cards.filter((c) => c.id !== cardId);
+				
+				return updateLaneById(state, laneId, { cards: updatedCards });
 			}),
-		),
-	removeCard: (laneId, cardId) =>
-		set(
-			produce<State>((state) => {
-				const lane = state.data.lanes.find((l) => l.id === laneId);
-				if (!lane) {
-					throw new Error("Lane not found");
-				}
-				const index = lane.cards.findIndex((c) => c.id === cardId);
-				if (index !== -1) {
-					lane.cards.splice(index, 1);
-				}
-			}),
-		),
-	moveCard: (fromLaneId, toLaneId, cardId, index) =>
-		set(
-			produce<State>((state) => {
-				const fromLane = state.data.lanes.find((l) => l.id === fromLaneId);
-				if (!fromLane) {
+		moveCard: (fromLaneId, toLaneId, cardId, index) =>
+			set((state) => {
+				const fromLaneIndex = state.data.lanes.findIndex((l) => l.id === fromLaneId);
+				if (fromLaneIndex === -1) {
 					throw new Error("fromLane not found");
 				}
-				const toLane = state.data.lanes.find((l) => l.id === toLaneId);
-				if (!toLane) {
+				
+				const toLaneIndex = state.data.lanes.findIndex((l) => l.id === toLaneId);
+				if (toLaneIndex === -1) {
 					throw new Error("toLane not found");
 				}
+				
+				const fromLane = state.data.lanes[fromLaneIndex];
+				const toLane = state.data.lanes[toLaneIndex];
+				
 				const cardIndex = fromLane.cards.findIndex((c) => c.id === cardId);
-				if (cardIndex !== -1) {
-					const card = fromLane.cards[cardIndex];
-					const newCard = { ...card, laneId: toLaneId };
-					fromLane.cards.splice(cardIndex, 1);
-					if (index !== undefined) {
-						toLane.cards.splice(index, 0, newCard);
-						return;
-					}
-					toLane.cards.push(newCard);
+				if (cardIndex === -1) {
+					return state;
 				}
-			}),
-		),
-
-	updateCards: (laneId, cards) =>
-		set(
-			produce<State>((state) => {
-				const lane = state.data.lanes.find((l) => l.id === laneId);
-				if (!lane) {
-					throw new Error("Lane not found");
+				
+				const card = fromLane.cards[cardIndex];
+				const newCard = { ...card, laneId: toLaneId };
+				
+				const updatedFromCards = fromLane.cards.filter((_, i) => i !== cardIndex);
+				
+				let updatedToCards;
+				if (index !== undefined) {
+					updatedToCards = [...toLane.cards];
+					updatedToCards.splice(index, 0, newCard);
+				} else {
+					updatedToCards = [...toLane.cards, newCard];
 				}
-				lane.cards = cards;
+				
+				const updatedLanes = [...state.data.lanes];
+				updatedLanes[fromLaneIndex] = { ...fromLane, cards: updatedFromCards };
+				updatedLanes[toLaneIndex] = { ...toLane, cards: updatedToCards };
+				
+				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
-		),
-	updateCard: (laneId, card) =>
-		set(
-			produce<State>((state) => {
-				const lane = state.data.lanes.find((l) => l.id === laneId);
-				if (!lane) {
-					throw new Error("Lane not found");
+		updateCards: (laneId, cards) =>
+			set((state) => updateLaneById(state, laneId, { cards })),
+		updateCard: (laneId, card) =>
+			set((state) => {
+				const laneIndex = findLaneIndex(state, laneId);
+				const lane = state.data.lanes[laneIndex];
+				const cardIndex = lane.cards.findIndex((c) => c.id === card.id);
+				
+				if (cardIndex === -1) {
+					return state;
 				}
-				const index = lane.cards.findIndex((c) => c.id === card.id);
-				if (index !== -1) {
-					lane.cards[index] = card;
+				
+				const updatedCards = [...lane.cards];
+				updatedCards[cardIndex] = card;
+				
+				return updateLaneById(state, laneId, { cards: updatedCards });
+			}),
+		updateLanes: (lanes) =>
+			set((state) => ({
+				data: { ...state.data, lanes },
+			})),
+		updateLane: (lane) =>
+			set((state) => {
+				if (!lane.id) return state;
+				
+				const laneIndex = state.data.lanes.findIndex((l) => l.id === lane.id);
+				if (laneIndex === -1) {
+					return state;
 				}
+				
+				return updateLaneById(state, lane.id, lane);
 			}),
-		),
-	updateLanes: (lanes) =>
-		set(
-			produce<State>((state) => {
-				state.data.lanes = lanes;
-			}),
-		),
-
-	updateLane: (lane) =>
-		set(
-			produce<State>((state) => {
-				// biome-ignore lint/style/noParameterAssign: this is as expected with immer
-				lane = { ...lane, ...state.data.lanes.find((l) => l.id === lane.id) };
-			}),
-		),
-	paginateLane: (laneId, newCards, nextPage) =>
-		set(
-			produce<State>((state) => {
-				state.data.lanes.map((l) =>
+		paginateLane: (laneId, newCards, nextPage) =>
+			set((state) => {
+				const updatedLanes = state.data.lanes.map((l) =>
 					l.id === laneId
-						? { ...l, cards: [...l.cards, ...newCards], nextPage }
-						: l,
+						? { ...l, cards: [...l.cards, ...newCards], currentPage: nextPage }
+						: l
 				);
+				
+				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
-		),
-	moveLane: (fromIndex, toIndex) =>
-		set(
-			produce<State>((state) => {
-				const lane = state.data.lanes[fromIndex];
-				state.data.lanes.splice(fromIndex, 1);
-				state.data.lanes.splice(toIndex, 0, lane);
+		moveLane: (fromIndex, toIndex) =>
+			set((state) => {
+				const updatedLanes = [...state.data.lanes];
+				const [lane] = updatedLanes.splice(fromIndex, 1);
+				updatedLanes.splice(toIndex, 0, lane);
+				
+				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
-		),
-	removeLane: (laneId) =>
-		set(
-			produce<State>((state) => {
-				const index = state.data.lanes.findIndex((l) => l.id === laneId);
-				if (index !== -1) {
-					state.data.lanes.splice(index, 1);
-				}
+		removeLane: (laneId) =>
+			set((state) => {
+				const updatedLanes = state.data.lanes.filter((l) => l.id !== laneId);
+				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
-		),
-	addLane: (lane) =>
-		set(
-			produce<State>((state) => {
-				state.data.lanes.push(lane);
-			}),
-		),
-}));
+		addLane: (lane) =>
+			set((state) => ({
+				data: { ...state.data, lanes: [...state.data.lanes, lane] },
+			})),
+	};
+});

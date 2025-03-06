@@ -38,12 +38,9 @@
 	},
 	"homepage": "https://github.com/KaiSpencer/react-trello-ts",
 	"dependencies": {
-		"autosize": "^4.0.4",
-		"classnames": "^2.5.1",
-		"immer": "^9.0.21",
 		"react-popopo": "^2.1.9",
 		"react-trello-ts-smooth-dnd": "^0.0.3",
-		"uuid": "^9.0.1",
+		"uuid": "^11.1.0",
 		"zustand": "^4.5.2"
 	},
 	"devDependencies": {
@@ -62,7 +59,7 @@
 		"@types/react": "^16.14.60",
 		"@types/react-dom": "^16.9.24",
 		"@types/styled-components": "^5.1.34",
-		"@types/uuid": "^8.3.4",
+		"@types/uuid": "^10",
 		"i18next": "^17.3.1",
 		"playwright": "^1.44.1",
 		"publint": "^0.2.8",

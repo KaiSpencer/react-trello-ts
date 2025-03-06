@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import React, { FC, PropsWithChildren, createContext } from "react";
 import { v1 } from "uuid";
 import * as DefaultComponets from "../components";
@@ -15,7 +14,7 @@ export const Board: FC<
 		t?: any;
 	}>
 > = ({ data, children, className, components, id, t, ...rest }) => {
-	const allClassNames = classNames("react-trello-board", className || "");
+	const allClassNames = className ? `react-trello-board ${className}` : "react-trello-board";
 
 	return (
 		<BoardContext.Provider value={store}>
