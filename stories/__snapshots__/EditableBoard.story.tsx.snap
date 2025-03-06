@@ -155,7 +155,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                       >
                         Clean House
                       </textarea>
@@ -168,7 +168,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         30 mins
                       </textarea>
@@ -187,7 +187,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 54px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 54px;"
                     >
                       Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                     </textarea>
@@ -257,7 +257,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                       >
                         Practice Meditation
                       </textarea>
@@ -270,7 +270,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         15 mins
                       </textarea>
@@ -289,7 +289,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Use Headspace app
                     </textarea>
@@ -311,7 +311,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                       >
                         Maintain Daily Journal
                       </textarea>
@@ -324,7 +324,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         15 mins
                       </textarea>
@@ -343,7 +343,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Use Spreadsheet for now
                     </textarea>
@@ -389,7 +389,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                       >
                         Morning Jog
                       </textarea>
@@ -402,7 +402,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         30 mins
                       </textarea>
@@ -421,7 +421,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Track using fitbit
                     </textarea>
@@ -467,7 +467,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                       >
                         Go Trekking
                       </textarea>
@@ -480,7 +480,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         300 mins
                       </textarea>
@@ -499,7 +499,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Completed 10km on cycle
                     </textarea>
@@ -545,7 +545,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                       >
                         Go Jogging
                       </textarea>
@@ -558,7 +558,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         300 mins
                       </textarea>
@@ -577,7 +577,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Completed 10km on cycle
                     </textarea>
@@ -623,7 +623,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                       >
                         Go Cycling
                       </textarea>
@@ -636,7 +636,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                                 spellcheck="false"
                                 rows="1"
                                 class="sc-fHjqPf bsHyvp"
-                                style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                                style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                       >
                         300 mins
                       </textarea>
@@ -655,7 +655,7 @@ exports[`Editable Board AddDeleteCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Completed 10km on cycle
                     </textarea>
@@ -710,7 +710,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Buy milk
                     </textarea>
@@ -723,7 +723,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-12-01
                     </textarea>
@@ -742,7 +742,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     2 Gallons of milk at the Deli store
                   </textarea>
@@ -764,7 +764,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Dispose Garbage
                     </textarea>
@@ -777,7 +777,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-11-01
                     </textarea>
@@ -796,7 +796,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     Sort out recyclable and waste as needed
                   </textarea>
@@ -818,7 +818,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Write Blog
                     </textarea>
@@ -831,7 +831,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-10-01
                     </textarea>
@@ -850,7 +850,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Can AI make memes?
                   </textarea>
@@ -872,7 +872,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Pay Rent
                     </textarea>
@@ -885,7 +885,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-09-01
                     </textarea>
@@ -904,7 +904,7 @@ exports[`Editable Board AddNewLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Transfer to bank account
                   </textarea>
@@ -1081,7 +1081,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Clean House
                     </textarea>
@@ -1094,7 +1094,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       30 mins
                     </textarea>
@@ -1113,7 +1113,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 54px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 54px;"
                   >
                     Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                   </textarea>
@@ -1179,7 +1179,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                     >
                       Practice Meditation
                     </textarea>
@@ -1192,7 +1192,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       15 mins
                     </textarea>
@@ -1211,7 +1211,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Use Headspace app
                   </textarea>
@@ -1233,7 +1233,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                     >
                       Maintain Daily Journal
                     </textarea>
@@ -1246,7 +1246,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       15 mins
                     </textarea>
@@ -1265,7 +1265,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Use Spreadsheet for now
                   </textarea>
@@ -1309,7 +1309,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Morning Jog
                     </textarea>
@@ -1322,7 +1322,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       30 mins
                     </textarea>
@@ -1341,7 +1341,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Track using fitbit
                   </textarea>
@@ -1385,7 +1385,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Go Trekking
                     </textarea>
@@ -1398,7 +1398,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       300 mins
                     </textarea>
@@ -1417,7 +1417,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Completed 10km on cycle
                   </textarea>
@@ -1461,7 +1461,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Go Jogging
                     </textarea>
@@ -1474,7 +1474,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       300 mins
                     </textarea>
@@ -1493,7 +1493,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Completed 10km on cycle
                   </textarea>
@@ -1537,7 +1537,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Go Cycling
                     </textarea>
@@ -1550,7 +1550,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       300 mins
                     </textarea>
@@ -1569,7 +1569,7 @@ exports[`Editable Board DisallowAddingCardForSpecificLane smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Completed 10km on cycle
                   </textarea>
@@ -1623,7 +1623,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Buy milk
                     </textarea>
@@ -1636,7 +1636,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-12-01
                     </textarea>
@@ -1655,7 +1655,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     2 Gallons of milk at the Deli store
                   </textarea>
@@ -1677,7 +1677,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Dispose Garbage
                     </textarea>
@@ -1690,7 +1690,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-11-01
                     </textarea>
@@ -1709,7 +1709,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     Sort out recyclable and waste as needed
                   </textarea>
@@ -1731,7 +1731,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Write Blog
                     </textarea>
@@ -1744,7 +1744,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-10-01
                     </textarea>
@@ -1763,7 +1763,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Can AI make memes?
                   </textarea>
@@ -1785,7 +1785,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Pay Rent
                     </textarea>
@@ -1798,7 +1798,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-09-01
                     </textarea>
@@ -1817,7 +1817,7 @@ exports[`Editable Board InlineEditLaneTitleAndCards smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Transfer to bank account
                   </textarea>

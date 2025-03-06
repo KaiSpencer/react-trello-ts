@@ -82,22 +82,22 @@ const BoardWithCustomCard = () => {
 	const [boardData, setBoardData] = React.useState<BoardData>(customCardData);
 	const onDragEnd = (cardId, sourceLandId, targetLaneId, index, card) => {
 		debug("Calling onDragEnd");
-		
+
 		// Create updated card without immer
 		const updatedCard = {
 			...card,
-			cardColor: "#d0fdd2"
+			cardColor: "#d0fdd2",
 		};
-		
+
 		// Create updated board without immer
 		const updatedBoard = {
 			...boardData,
-			lanes: boardData.lanes.map(lane => {
+			lanes: boardData.lanes.map((lane) => {
 				// Source lane - remove the card
 				if (lane.id === sourceLandId) {
 					return {
 						...lane,
-						cards: lane.cards?.filter(c => c.id !== cardId) ?? []
+						cards: lane.cards?.filter((c) => c.id !== cardId) ?? [],
 					};
 				}
 				// Target lane - add the card at the specified index
@@ -106,14 +106,14 @@ const BoardWithCustomCard = () => {
 					newCards.splice(index, 0, updatedCard);
 					return {
 						...lane,
-						cards: newCards
+						cards: newCards,
 					};
 				}
 				// Other lanes remain unchanged
 				return lane;
-			})
+			}),
 		};
-		
+
 		setBoardData(updatedBoard);
 	};
 	return (

@@ -297,7 +297,9 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		);
 	};
 
-	const allClassNames = className ? `react-trello-lane ${className}` : "react-trello-lane";
+	const allClassNames = className
+		? `react-trello-lane ${className}`
+		: "react-trello-lane";
 	const showFooter = collapsibleLanes && cards.length > 0;
 	return (
 		<components.Section

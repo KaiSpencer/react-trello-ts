@@ -1,4 +1,4 @@
-import create from "zustand";
+import { create } from "zustand";
 import { BoardData, Card, Lane } from "../types/Board";
 
 export interface State {
@@ -24,7 +24,11 @@ export interface State {
 }
 export const store = create<State>()((set) => {
 	// Helper function to find a lane by ID and throw if not found
-	const findLaneIndex = (state: State, laneId: string, errorMessage = "Lane not found") => {
+	const findLaneIndex = (
+		state: State,
+		laneId: string,
+		errorMessage = "Lane not found",
+	) => {
 		const laneIndex = state.data.lanes.findIndex((l) => l.id === laneId);
 		if (laneIndex === -1) {
 			throw new Error(errorMessage);
@@ -33,11 +37,15 @@ export const store = create<State>()((set) => {
 	};
 
 	// Helper function to update a single lane
-	const updateLaneById = (state: State, laneId: string, updates: Partial<Lane>) => {
+	const updateLaneById = (
+		state: State,
+		laneId: string,
+		updates: Partial<Lane>,
+	) => {
 		const laneIndex = findLaneIndex(state, laneId);
 		const updatedLanes = [...state.data.lanes];
 		updatedLanes[laneIndex] = { ...updatedLanes[laneIndex], ...updates };
-		
+
 		return { data: { ...state.data, lanes: updatedLanes } };
 	};
 
@@ -59,7 +67,7 @@ export const store = create<State>()((set) => {
 			set((state) => {
 				const laneIndex = findLaneIndex(state, laneId);
 				const lane = state.data.lanes[laneIndex];
-				
+
 				let updatedCards;
 				if (index === undefined) {
 					updatedCards = [...lane.cards, card];
@@ -67,7 +75,7 @@ export const store = create<State>()((set) => {
 					updatedCards = [...lane.cards];
 					updatedCards[index] = card;
 				}
-				
+
 				return updateLaneById(state, laneId, { cards: updatedCards });
 			}),
 		removeCard: (laneId, cardId) =>
@@ -75,34 +83,40 @@ export const store = create<State>()((set) => {
 				const laneIndex = findLaneIndex(state, laneId);
 				const lane = state.data.lanes[laneIndex];
 				const updatedCards = lane.cards.filter((c) => c.id !== cardId);
-				
+
 				return updateLaneById(state, laneId, { cards: updatedCards });
 			}),
 		moveCard: (fromLaneId, toLaneId, cardId, index) =>
 			set((state) => {
-				const fromLaneIndex = state.data.lanes.findIndex((l) => l.id === fromLaneId);
+				const fromLaneIndex = state.data.lanes.findIndex(
+					(l) => l.id === fromLaneId,
+				);
 				if (fromLaneIndex === -1) {
 					throw new Error("fromLane not found");
 				}
-				
-				const toLaneIndex = state.data.lanes.findIndex((l) => l.id === toLaneId);
+
+				const toLaneIndex = state.data.lanes.findIndex(
+					(l) => l.id === toLaneId,
+				);
 				if (toLaneIndex === -1) {
 					throw new Error("toLane not found");
 				}
-				
+
 				const fromLane = state.data.lanes[fromLaneIndex];
 				const toLane = state.data.lanes[toLaneIndex];
-				
+
 				const cardIndex = fromLane.cards.findIndex((c) => c.id === cardId);
 				if (cardIndex === -1) {
 					return state;
 				}
-				
+
 				const card = fromLane.cards[cardIndex];
 				const newCard = { ...card, laneId: toLaneId };
-				
-				const updatedFromCards = fromLane.cards.filter((_, i) => i !== cardIndex);
-				
+
+				const updatedFromCards = fromLane.cards.filter(
+					(_, i) => i !== cardIndex,
+				);
+
 				let updatedToCards;
 				if (index !== undefined) {
 					updatedToCards = [...toLane.cards];
@@ -110,11 +124,11 @@ export const store = create<State>()((set) => {
 				} else {
 					updatedToCards = [...toLane.cards, newCard];
 				}
-				
+
 				const updatedLanes = [...state.data.lanes];
 				updatedLanes[fromLaneIndex] = { ...fromLane, cards: updatedFromCards };
 				updatedLanes[toLaneIndex] = { ...toLane, cards: updatedToCards };
-				
+
 				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
 		updateCards: (laneId, cards) =>
@@ -124,14 +138,14 @@ export const store = create<State>()((set) => {
 				const laneIndex = findLaneIndex(state, laneId);
 				const lane = state.data.lanes[laneIndex];
 				const cardIndex = lane.cards.findIndex((c) => c.id === card.id);
-				
+
 				if (cardIndex === -1) {
 					return state;
 				}
-				
+
 				const updatedCards = [...lane.cards];
 				updatedCards[cardIndex] = card;
-				
+
 				return updateLaneById(state, laneId, { cards: updatedCards });
 			}),
 		updateLanes: (lanes) =>
@@ -141,12 +155,12 @@ export const store = create<State>()((set) => {
 		updateLane: (lane) =>
 			set((state) => {
 				if (!lane.id) return state;
-				
+
 				const laneIndex = state.data.lanes.findIndex((l) => l.id === lane.id);
 				if (laneIndex === -1) {
 					return state;
 				}
-				
+
 				return updateLaneById(state, lane.id, lane);
 			}),
 		paginateLane: (laneId, newCards, nextPage) =>
@@ -154,9 +168,9 @@ export const store = create<State>()((set) => {
 				const updatedLanes = state.data.lanes.map((l) =>
 					l.id === laneId
 						? { ...l, cards: [...l.cards, ...newCards], currentPage: nextPage }
-						: l
+						: l,
 				);
-				
+
 				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
 		moveLane: (fromIndex, toIndex) =>
@@ -164,7 +178,7 @@ export const store = create<State>()((set) => {
 				const updatedLanes = [...state.data.lanes];
 				const [lane] = updatedLanes.splice(fromIndex, 1);
 				updatedLanes.splice(toIndex, 0, lane);
-				
+
 				return { data: { ...state.data, lanes: updatedLanes } };
 			}),
 		removeLane: (laneId) =>

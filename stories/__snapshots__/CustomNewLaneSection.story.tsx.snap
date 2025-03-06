@@ -36,7 +36,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Buy milk
                     </textarea>
@@ -49,7 +49,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-12-01
                     </textarea>
@@ -68,7 +68,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     2 Gallons of milk at the Deli store
                   </textarea>
@@ -90,7 +90,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Dispose Garbage
                     </textarea>
@@ -103,7 +103,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-11-01
                     </textarea>
@@ -122,7 +122,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     Sort out recyclable and waste as needed
                   </textarea>
@@ -144,7 +144,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Write Blog
                     </textarea>
@@ -157,7 +157,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-10-01
                     </textarea>
@@ -176,7 +176,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Can AI make memes?
                   </textarea>
@@ -198,7 +198,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Pay Rent
                     </textarea>
@@ -211,7 +211,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 36px;"
                     >
                       2017-09-01
                     </textarea>
@@ -230,7 +230,7 @@ exports[`Custom Components NewLaneSection smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Transfer to bank account
                   </textarea>

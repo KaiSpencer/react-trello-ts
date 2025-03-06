@@ -14,7 +14,9 @@ export const Board: FC<
 		t?: any;
 	}>
 > = ({ data, children, className, components, id, t, ...rest }) => {
-	const allClassNames = className ? `react-trello-board ${className}` : "react-trello-board";
+	const allClassNames = className
+		? `react-trello-board ${className}`
+		: "react-trello-board";
 
 	return (
 		<BoardContext.Provider value={store}>
