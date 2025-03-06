@@ -1,10 +1,5 @@
-import autosize from "autosize";
-import React, {
-	HTMLAttributes,
-	PropsWithChildren,
-	useRef,
-	useState,
-} from "react";
+import React, { HTMLAttributes, PropsWithChildren, useState } from "react";
+import autosize from "../helpers/autosize";
 import { InlineInput } from "../styles/Base";
 
 interface NewLaneTitleEditorProps extends HTMLAttributes<HTMLTextAreaElement> {
@@ -54,7 +49,7 @@ export const NewLaneTitleEditor: React.FC<
 	const setRef = (ref: HTMLTextAreaElement) => {
 		inputRef.current = ref;
 		if (resize !== "none") {
-			autosize(inputRef);
+			autosize(inputRef.current);
 		}
 	};
 	const cancel = () => {

@@ -1,7 +1,6 @@
 import React, { CSSProperties, FC, PropsWithChildren, useEffect } from "react";
 import { v1 } from "uuid";
 
-import classNames from "classnames";
 import { components, createTranslate } from "..";
 import Container from "../dnd/Container";
 import { Draggable } from "../dnd/Draggable";
@@ -298,7 +297,9 @@ export const Lane: FC<PropsWithChildren<LaneProps>> = ({
 		);
 	};
 
-	const allClassNames = classNames("react-trello-lane", className || "");
+	const allClassNames = className
+		? `react-trello-lane ${className}`
+		: "react-trello-lane";
 	const showFooter = collapsibleLanes && cards.length > 0;
 	return (
 		<components.Section

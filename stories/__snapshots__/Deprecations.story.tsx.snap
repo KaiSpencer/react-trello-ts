@@ -37,7 +37,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Buy milk
                     </textarea>
@@ -50,7 +50,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       15 mins
                     </textarea>
@@ -69,7 +69,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     2 Gallons of milk at the Deli store
                   </textarea>
@@ -91,7 +91,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Dispose Garbage
                     </textarea>
@@ -104,7 +104,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       10 mins
                     </textarea>
@@ -123,7 +123,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                   >
                     Sort out recyclable and waste as needed
                   </textarea>
@@ -145,7 +145,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Write Blog
                     </textarea>
@@ -158,7 +158,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       30 mins
                     </textarea>
@@ -177,7 +177,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Can AI make memes?
                   </textarea>
@@ -199,7 +199,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Pay Rent
                     </textarea>
@@ -212,7 +212,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       5 mins
                     </textarea>
@@ -231,7 +231,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Transfer to bank account
                   </textarea>
@@ -275,7 +275,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Clean House
                     </textarea>
@@ -288,7 +288,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       30 mins
                     </textarea>
@@ -307,7 +307,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 54px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 54px;"
                   >
                     Soap wash and polish floor. Polish windows and doors. Scrap all broken glasses
                   </textarea>
@@ -373,7 +373,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                     >
                       Practice Meditation
                     </textarea>
@@ -386,7 +386,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       15 mins
                     </textarea>
@@ -405,7 +405,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Use Headspace app
                   </textarea>
@@ -427,7 +427,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 36px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 36px;"
                     >
                       Maintain Daily Journal
                     </textarea>
@@ -440,7 +440,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       15 mins
                     </textarea>
@@ -459,7 +459,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Use Spreadsheet for now
                   </textarea>
@@ -503,7 +503,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Morning Jog
                     </textarea>
@@ -516,7 +516,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       30 mins
                     </textarea>
@@ -535,7 +535,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Track using fitbit
                   </textarea>
@@ -579,7 +579,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Go Trekking
                     </textarea>
@@ -592,7 +592,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       300 mins
                     </textarea>
@@ -611,7 +611,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Completed 10km on cycle
                   </textarea>
@@ -655,7 +655,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Go Jogging
                     </textarea>
@@ -668,7 +668,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       300 mins
                     </textarea>
@@ -687,7 +687,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Completed 10km on cycle
                   </textarea>
@@ -731,7 +731,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                     >
                       Go Cycling
                     </textarea>
@@ -744,7 +744,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                               spellcheck="false"
                               rows="1"
                               class="sc-fHjqPf bsHyvp"
-                              style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                              style="overflow: hidden; overflow-wrap: break-word; text-align: right; height: 18px;"
                     >
                       300 mins
                     </textarea>
@@ -763,7 +763,7 @@ exports[`Deprecation warnings v2_2_warnings smoke-test 1`] = `
                             spellcheck="false"
                             rows="1"
                             class="sc-fHjqPf bsHyvp"
-                            style="overflow: hidden; overflow-wrap: break-word; height: 18px;"
+                            style="overflow: hidden; overflow-wrap: break-word; text-align: start; height: 18px;"
                   >
                     Completed 10km on cycle
                   </textarea>
